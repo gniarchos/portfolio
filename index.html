@@ -9,22 +9,37 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
     <title>Giannis Niarchos | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="navbar">
-      <h3>Giannis Niarchos</h3>
+      <h3 class="logo-name">Giannis Niarchos</h3>
       <div class="nav-links">
         <p class="link" onclick="scrollToProjects()">Projects</p>
         <p class="link" onclick="scrollToContact()">Contact</p>
       </div>
+
+      <button id="hamburger" class="hamburger">
+        <div class="bar"></div>
+      </button>
     </nav>
+    <div id="mobile-nav" class="mobile-nav">
+        <p class="mobile-link" onclick="scrollToProjects()">Projects</p>
+        <p class="mobile-link" onclick="scrollToContact()">Contact</p>
+    </div>
     <div class="page">
       <div class="header">
         <div id="particles-js"></div>
@@ -69,7 +84,6 @@
             <button class="view-button" onclick="scrollToProjects()">
               View Projects
             </button>
-            <!-- <button ></button> -->
             <a class="view-button resume" href="./resume.pdf" download="Niarchos_Ioannis_RESUME">Download Resume</a>
           </div>
         </div>
@@ -78,7 +92,7 @@
       <div class="projects-wrapper" id="projects">
         <h1 class="section-title">Projects</h1>
 
-        <div data-aos="fade-right" data-aos-easing="ease-in" class="project">
+        <div data-aos="fade-right" data-aos-easing="ease-in" data-aos-offset="300" class="project">
           <div class="project-container">
             <div class="project-left">
               <h1 class="project-name">
@@ -110,6 +124,12 @@
                 <iconify-icon icon="eos-icons:api" width="28"></iconify-icon>
 
               </div>
+              
+              <p class="creds-title">Guest Credentials:</p>
+              <div class="guest-creds">
+                <p> <b>Email:</b> Coming Soon...</p>
+                <p> <b>Password:</b> Coming Soon...</p>
+              </div>
 
               <div class="project-btns">
                 <a class="project-button" href="https://tvtime-app-tracker.web.app/">
@@ -123,9 +143,6 @@
               <div class="slider">
                 <div class="slide">
                   <img src="./tv-time_1.png">
-                </div>
-                <div class="slide">
-                  <img src="./tv-time_2.png">
                 </div>
                 <div class="slide">
                   <img src="./tv-time_3.png">
@@ -150,7 +167,7 @@
             </div>
           </div>
 
-        <div data-aos="fade-right" data-aos-easing="ease-in" class="project">
+        <div data-aos="fade-right" data-aos-easing="ease-in" data-aos-offset="300" class="project">
           <div class="project-container">
             <div class="project-left">
               <h1 class="project-name">
@@ -162,15 +179,29 @@
                 This project is using the MySQL server for login/signup and
                 for user data. The webapp is fetching all the data from the server and the connection was made using PHP.
               </p>
-              <h3 class="features">FEATURES</h3>
-              <p>- Order from plenty of restaurants</p>
-              <p>- Search restaurants</p>
-              <p>- Apply filters</p>
-              <p>- See restaurant's menu</p>
-              <p>- Make orders</p>
-              <p>- Order Summary</p>
-              <p>- Submit and read reviews</p>
+              <div class="thesis-info">
+                <div>
+                  <h3 class="features">FEATURES</h3>
+                  <p>- Order from plenty of restaurants</p>
+                  <p>- Search restaurants</p>
+                  <p>- Apply filters</p>
+                  <p>- See restaurant's menu</p>
+                  <p>- Make orders</p>
+                  <p>- Order Summary</p>
+                  <p>- Submit and read reviews</p>
+                </div>
 
+                <div>
+                  <h3 class="features">Adaptivity by:</h3>
+                  <p>- Time of day</p>
+                  <p>- Preferences of the user</p>
+                  <p>- The age of the user</p>
+                  <p>- The location of the user</p>
+                  <p>- The device of the user</p>
+                </div>
+
+              </div>
+              
               <div class="using-imgs">
                 <iconify-icon icon="logos:html-5" width="28"></iconify-icon>
                 <iconify-icon icon="logos:css-3" width="28"></iconify-icon>
@@ -178,6 +209,12 @@
                 <iconify-icon icon="skill-icons:javascript" width="28"></iconify-icon>
                 <iconify-icon icon="logos:php" width="28"></iconify-icon>
 
+              </div>
+
+              <p class="creds-title">Guest Credentials:</p>
+              <div class="guest-creds">
+                <p> <b>Email:</b> Coming Soon...</p>
+                <p> <b>Password:</b> Coming Soon...</p>
               </div>
 
               <div class="project-btns">
@@ -225,7 +262,7 @@
           </div>
         </div>
 
-        <div data-aos="fade-right" data-aos-easing="ease-in" class="project">
+        <div data-aos="fade-right" data-aos-easing="ease-in" data-aos-offset="300" class="project">
           <div class="project-container">
             <div class="project-left">
               <h1 class="project-name">
@@ -253,6 +290,12 @@
                 <iconify-icon icon="logos:react" width="28"></iconify-icon>
                 <iconify-icon icon="skill-icons:javascript" width="28"></iconify-icon>
 
+              </div>
+
+              <p class="creds-title">Guest Credentials:</p>
+              <div class="guest-creds">
+                <p> <b>Email:</b> Coming Soon...</p>
+                <p> <b>Password:</b> Coming Soon...</p>
               </div>
 
               <div class="project-btns">
@@ -306,7 +349,7 @@
           </div>
         </div>
 
-        <div data-aos="fade-right" data-aos-easing="ease-in" class="project">
+        <div data-aos="fade-right" data-aos-easing="ease-in" data-aos-offset="300" class="project">
           <div class="project-container">
             <div class="project-left">
               <h1 class="project-name">
@@ -367,7 +410,7 @@
             </div> 
           </div>
 
-          <div data-aos="fade-right" data-aos-easing="ease-in" class="project">
+          <div data-aos="fade-right" data-aos-easing="ease-in" data-aos-offset="300" class="project">
           <div class="project-container">
             <div class="project-left">
               <h1 class="project-name">
@@ -434,11 +477,11 @@
           <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xvonwkjr" method="post">
           
             <label for="full-name">Full Name</label>
-            <input type="text" name="name" id="full-name" placeholder="First and Last" required>
+            <input type="text" name="name" id="full-name" placeholder="First and Last Name" required>
             <label for="email-address">Email Address</label>
             <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required>
             <label for="message">Message</label>
-            <textarea rows="5" name="message" id="message" placeholder="Your message..." required=""></textarea>
+            <textarea rows="5" name="message" id="message" placeholder="Your message here..." required=""></textarea>
             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
           
           <input class="submit" type="submit" value="Submit">
