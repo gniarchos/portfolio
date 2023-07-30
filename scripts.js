@@ -8,6 +8,20 @@ menu_btn.addEventListener("click", function () {
   links_btn.classList.toggle("is-active")
 })
 
+function scrollToProjects() {
+  var proj = document.getElementById("projects")
+  proj.scrollIntoView()
+  menu_btn.classList.toggle("is-active")
+  links_btn.classList.toggle("is-active")
+}
+
+function scrollToContact() {
+  var proj = document.getElementById("contact")
+  proj.scrollIntoView()
+  menu_btn.classList.toggle("is-active")
+  links_btn.classList.toggle("is-active")
+}
+
 const sliders = document.querySelectorAll(".slider")
 
 sliders.forEach((slider) => {
@@ -44,18 +58,6 @@ sliders.forEach((slider) => {
 
   initSlider()
 })
-
-function scrollToProjects() {
-  var proj = document.getElementById("projects")
-  proj.scrollIntoView()
-  menu_btn.classList.toggle("is-active")
-}
-
-function scrollToContact() {
-  var proj = document.getElementById("contact")
-  proj.scrollIntoView()
-  menu_btn.classList.toggle("is-active")
-}
 
 particlesJS("particles-js", {
   particles: {
