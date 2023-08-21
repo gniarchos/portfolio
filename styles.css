@@ -55,6 +55,7 @@ body {
 .logo-name {
   font-family: "Ysabeau SC", sans-serif;
   font-size: 1.4rem;
+  font-weight: 1000;
   margin-top: 4px;
   margin-bottom: 5px;
 }
@@ -213,6 +214,11 @@ canvas {
   background: rgba(255, 255, 255, 0.1);
   text-decoration: none;
   backdrop-filter: blur(2px);
+  cursor: not-allowed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
 
 .social-icon {
@@ -241,6 +247,12 @@ canvas {
   bottom: -5px;
   left: 0;
   width: 100%;
+}
+
+.workedWith-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .project {
@@ -297,10 +309,13 @@ canvas {
   font-weight: 800;
 }
 
+.api-links {
+  color: white;
+}
+
 .thesis-info {
   display: flex;
   flex-direction: row;
-  /* gap: 80px; */
   gap: 5%;
 }
 
@@ -367,6 +382,10 @@ canvas {
   gap: 20px;
 }
 
+.thesis-buttons {
+  margin-top: 50px;
+}
+
 .project-button {
   background: transparent;
   padding: 8px;
@@ -389,21 +408,6 @@ canvas {
 .gitRepo {
   background: rgb(241, 247, 238, 0.4);
   backdrop-filter: blur(2px);
-}
-
-.guest-creds {
-  font-size: 0.9rem;
-  font-weight: 200;
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.creds-title {
-  margin-bottom: -15px;
-  margin-top: -10px;
-  font-weight: 300;
-  /* text-decoration: underline; */
 }
 
 .contact-wrapper {
@@ -439,6 +443,7 @@ form input {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   text-align: center;
+  background-color: #ebe9e9;
 }
 
 form label {
@@ -453,6 +458,7 @@ form textarea {
   margin-bottom: 20px;
   font-size: 1rem;
   text-align: center;
+  background-color: #ebe9e9;
 }
 
 .submit {
@@ -640,7 +646,7 @@ footer {
   }
 
   .navbar {
-    padding-left: 3vw;
+    padding-left: 5vw;
     padding-right: 3vw;
   }
 
@@ -702,5 +708,9 @@ footer {
   .mobile-nav.is-active {
     right: 0;
     opacity: 1;
+  }
+
+  .header-btns {
+    gap: 15px;
   }
 }

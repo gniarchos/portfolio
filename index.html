@@ -36,9 +36,12 @@
     />
     <link rel="shortcut icon" href="images/favicon.ico?" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <link href="iphone5_splash.pngmedia="(device-width: 320px) and
+    <link
+      href="images/iphone5_splash.png"
+      media="(device-width: 320px) and
     (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
-    rel="apple-touch-startup-image" />
+      rel="apple-touch-startup-image"
+    />
     <link
       href="images/iphone6_splash.png"
       media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
@@ -95,12 +98,13 @@
     />
     <meta name="apple-mobile-web-app-title" content="g_niarchos" />
     <meta name="application-name" content="g_niarchos" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Giannis Niarchos | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="navbar">
-      <h3 class="logo-name">Giannis Niarchos</h3>
+      <h3 class="logo-name">G.N.</h3>
       <div class="nav-links">
         <p class="link" onclick="scrollToProjects()">Projects</p>
         <p class="link" onclick="scrollToContact()">Contact</p>
@@ -158,13 +162,76 @@
             <button class="view-button" onclick="scrollToProjects()">
               View Projects
             </button>
-            <a
+            <!-- <a
               class="view-button resume"
               href="./resume.pdf"
-              download="Niarchos_Ioannis_RESUME"
+              download="Niarchos_Ioannis_Resume"
               >Download Resume</a
-            >
+            > -->
+            <a class="view-button resume" download="Niarchos_Ioannis_Resume">
+              Download Resume
+              <iconify-icon
+                icon="humbleicons:download"
+                width="30"
+              ></iconify-icon>
+            </a>
           </div>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="section-title">I have worked with:</h1>
+        <div class="workedWith-wrapper">
+          <iconify-icon
+            icon="akar-icons:html-fill"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
+          <iconify-icon
+            icon="akar-icons:css-fill"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
+          <iconify-icon
+            icon="ri:javascript-fill"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
+          <iconify-icon
+            icon="grommet-icons:mysql"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
+          <iconify-icon
+            icon="teenyicons:react-outline"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
+          <iconify-icon
+            icon="eos-icons:api"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
+          <iconify-icon
+            icon="simple-icons:git"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
+          <iconify-icon
+            icon="akar-icons:php-fill"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
+          <iconify-icon
+            icon="mdi:firebase"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
+          <iconify-icon
+            icon="file-icons:expo"
+            style="color: white"
+            width="60"
+          ></iconify-icon>
         </div>
       </div>
 
@@ -184,12 +251,26 @@
                 TVTime - Shows Tracker
               </h1>
               <p>
-                A TV Shows organizer to track and find info about any tv show.
+                A TV Shows organizer to track and find information about any TV
+                Show.
               </p>
               <p>
-                This project is using the Firebase Database for login/signup and
-                for user data. The webapp is fetching all the data from two
-                different APIs, TheMovieDB API and MDBList API.
+                This project uses the Firebase Database for login/signup and
+                user data. The app fetches all the necessary data from two
+                different APIs,
+                <a
+                  class="api-links"
+                  target="_blank"
+                  href="https://developer.themoviedb.org/docs"
+                  >TheMovieDB API</a
+                >
+                and
+                <a
+                  class="api-links"
+                  target="_blank"
+                  href="https://rapidapi.com/linaspurinis/api/mdblist/"
+                  >MDBList API</a
+                >.
               </p>
               <h3 class="features">FEATURES</h3>
               <p>- Track Shows</p>
@@ -198,7 +279,7 @@
               <p>- Discover Trending Shows</p>
               <p>- Discover Popular Shows</p>
               <p>- Search for any Show</p>
-              <p>- PWA (standalone app) compatible</p>
+              <p>- PWA (standalone app) compatibility</p>
 
               <div class="using-imgs">
                 <iconify-icon icon="logos:html-5" width="28"></iconify-icon>
@@ -213,12 +294,6 @@
                   width="28"
                 ></iconify-icon>
                 <iconify-icon icon="eos-icons:api" width="28"></iconify-icon>
-              </div>
-
-              <p class="creds-title">Guest Credentials:</p>
-              <div class="guest-creds">
-                <p><b>Email:</b> Coming Soon...</p>
-                <p><b>Password:</b> Coming Soon...</p>
               </div>
 
               <div class="project-btns">
@@ -286,33 +361,43 @@
                 Foody (Thesis)
               </h1>
               <p>
-                A food delivery webapp using different types of Adaptive User
+                A food delivery app using various types of Adaptive User
                 Interfaces.
               </p>
               <p>
-                This project is using the MySQL server for login/signup and for
-                user data. The webapp is fetching all the data from the server
-                and the connection was made using PHP.
+                This project uses the MySQL server for login/signup and user
+                data. The app fetches all the data from the MySQL server and the
+                connection is established using PHP.
+              </p>
+              <p>
+                Documentation can be found in
+                <a
+                  style="color: white"
+                  href="https://polynoe.lib.uniwa.gr/xmlui/handle/11400/2295?locale-attribute=en"
+                  target="_blank"
+                  >Polynoe Repository</a
+                >
+                of University of West Attica.
               </p>
               <div class="thesis-info">
                 <div>
                   <h3 class="features">FEATURES</h3>
-                  <p>- Order from plenty of restaurants</p>
-                  <p>- Search restaurants</p>
+                  <p>- Order from a variety of restaurants</p>
+                  <p>- Search for restaurants</p>
                   <p>- Apply filters</p>
-                  <p>- See restaurant's menu</p>
-                  <p>- Make orders</p>
+                  <p>- View restaurant menus</p>
+                  <p>- Place orders</p>
                   <p>- Order Summary</p>
                   <p>- Submit and read reviews</p>
                 </div>
 
                 <div>
-                  <h3 class="features">Adaptivity by:</h3>
+                  <h3 class="features">Adaptivity based on:</h3>
                   <p>- Time of day</p>
-                  <p>- Preferences of the user</p>
-                  <p>- The age of the user</p>
-                  <p>- The location of the user</p>
-                  <p>- The device of the user</p>
+                  <p>- User's preferences</p>
+                  <p>- User's age</p>
+                  <p>- User's location</p>
+                  <p>- User's device</p>
                 </div>
               </div>
 
@@ -327,13 +412,7 @@
                 <iconify-icon icon="logos:php" width="28"></iconify-icon>
               </div>
 
-              <p class="creds-title">Guest Credentials:</p>
-              <div class="guest-creds">
-                <p><b>Email:</b> Coming Soon...</p>
-                <p><b>Password:</b> Coming Soon...</p>
-              </div>
-
-              <div class="project-btns">
+              <div class="project-btns thesis-buttons">
                 <a
                   class="project-button"
                   target="_blank"
@@ -407,27 +486,27 @@
                 Foody (React)
               </h1>
               <p>
-                The concept idea of thesis food delivery webapp redesigned using
-                React.
+                The conceptual idea of my thesis involves redesigning a food
+                delivery app using React.
               </p>
               <p>
-                This project based on
+                This project is based on the
                 <a style="color: white" href="https://www.e-food.gr/">Efood</a>
-                site and
+                and
                 <a style="color: white" href="https://wolt.com/en/grc">Wolt</a>
-                site. It is using the Firebase Database for login/signup and for
-                user data. The webapp is fetching all the data from the
+                websites. It uses the Firebase Database for login/signup and
+                user data. The app fetches all the necessary data from the
                 database.
               </p>
               <h3 class="features">FEATURES</h3>
-              <p>- Order from plenty of restaurants</p>
-              <p>- Search restaurants</p>
+              <p>- Order from a variety of restaurants</p>
+              <p>- Search for restaurants</p>
               <p>- Apply filters</p>
-              <p>- See restaurant's menu</p>
-              <p>- Make orders</p>
+              <p>- View restaurant menus</p>
+              <p>- Place orders</p>
               <p>- Order Summary</p>
               <p>- Submit and read reviews</p>
-              <p>- PWA (standalone app) compatible</p>
+              <p>- PWA (standalone app) compatibility</p>
 
               <div class="using-imgs">
                 <iconify-icon icon="logos:html-5" width="28"></iconify-icon>
@@ -441,12 +520,6 @@
                   icon="skill-icons:javascript"
                   width="28"
                 ></iconify-icon>
-              </div>
-
-              <p class="creds-title">Guest Credentials:</p>
-              <div class="guest-creds">
-                <p><b>Email:</b> Coming Soon...</p>
-                <p><b>Password:</b> Coming Soon...</p>
               </div>
 
               <div class="project-btns">
@@ -535,7 +608,7 @@
                   style="color: white"
                   href="https://www.nytimes.com/games/wordle/index.html"
                   >Wordle</a
-                >. It is using a list of words from Scrabble Games.
+                >.
               </p>
               <h3 class="features">How to play</h3>
               <p>
@@ -549,10 +622,12 @@
               <p>⬛ The letter is not in the word in any spot.</p>
 
               <h3 class="features">FEATURES</h3>
-              <p>- Infinite words daily</p>
-              <p>- User's statistics</p>
-              <p>- Dark/Light theme</p>
-              <p>- PWA (standalone app) compatible</p>
+              <p>- Daily infinite words</p>
+              <p>- User statistics</p>
+              <p>- Dark & Light mode</p>
+              <p>- Greek words only</p>
+              <p>- 7433 total words</p>
+              <p>- PWA (standalone app) compatibility</p>
 
               <div class="using-imgs">
                 <iconify-icon icon="logos:html-5" width="28"></iconify-icon>
@@ -628,13 +703,16 @@
               </h1>
               <p>Test your knowledge.</p>
               <p>
-                This project was made to practice in React using the Open Trivia
-                DB API.
+                This project was made to practice in React using the
+                <a class="api-links" href="https://opentdb.com/" target="_blank"
+                  >Open Trivia DB API</a
+                >.
               </p>
               <h3 class="features">How to play</h3>
+              <p>1. Select trivia properties</p>
+              <p>2. Answer all the questions</p>
               <p>
-                The goal of the game is to guess as many answers correct as you
-                can and test your knowledge.
+                3. Press "Show Results" to see how many correct answers you got
               </p>
 
               <h3 class="features">FEATURES</h3>
@@ -642,7 +720,7 @@
               <p>- Set the questions category (optional)</p>
               <p>- Set the questions difficulty (optional)</p>
               <p>- See the number of correct answers</p>
-              <p>- PWA (standalone app) compatible</p>
+              <p>- PWA (standalone app) compatibility</p>
 
               <div class="using-imgs">
                 <iconify-icon icon="logos:html-5" width="28"></iconify-icon>
