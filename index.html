@@ -104,7 +104,7 @@
   </head>
   <body>
     <nav class="navbar">
-      <h3 class="logo-name">G.N.</h3>
+      <h3 class="logo-name">G.Niarchos</h3>
       <div class="nav-links">
         <p class="link" onclick="scrollToProjects()">Projects</p>
         <p class="link" onclick="scrollToContact()">Contact</p>
@@ -179,58 +179,68 @@
         </div>
       </div>
 
-      <div>
-        <h1 class="section-title">I have worked with:</h1>
+      <div class="workedWith-container">
+        <h1 class="section-title workedWith">I have worked with:</h1>
         <div class="workedWith-wrapper">
           <iconify-icon
+            data-aos="zoom-in"
             icon="akar-icons:html-fill"
             style="color: white"
-            width="60"
+            class="workedWith-logos"
           ></iconify-icon>
           <iconify-icon
+            data-aos="zoom-in"
             icon="akar-icons:css-fill"
             style="color: white"
-            width="60"
+            class="workedWith-logos"
           ></iconify-icon>
           <iconify-icon
+            data-aos="zoom-in"
             icon="ri:javascript-fill"
             style="color: white"
-            width="60"
+            class="workedWith-logos"
           ></iconify-icon>
           <iconify-icon
-            icon="grommet-icons:mysql"
-            style="color: white"
-            width="60"
-          ></iconify-icon>
-          <iconify-icon
+            data-aos="zoom-in"
             icon="teenyicons:react-outline"
             style="color: white"
-            width="60"
+            class="workedWith-logos"
           ></iconify-icon>
           <iconify-icon
-            icon="eos-icons:api"
+            data-aos="zoom-in"
+            icon="grommet-icons:mysql"
             style="color: white"
-            width="60"
+            class="workedWith-logos"
           ></iconify-icon>
           <iconify-icon
-            icon="simple-icons:git"
-            style="color: white"
-            width="60"
-          ></iconify-icon>
-          <iconify-icon
-            icon="akar-icons:php-fill"
-            style="color: white"
-            width="60"
-          ></iconify-icon>
-          <iconify-icon
+            data-aos="zoom-in"
             icon="mdi:firebase"
             style="color: white"
-            width="60"
+            class="workedWith-logos"
           ></iconify-icon>
           <iconify-icon
+            data-aos="zoom-in"
+            icon="eos-icons:api"
+            style="color: white"
+            class="workedWith-logos"
+          ></iconify-icon>
+          <iconify-icon
+            data-aos="zoom-in"
+            icon="simple-icons:git"
+            style="color: white"
+            class="workedWith-logos"
+          ></iconify-icon>
+          <iconify-icon
+            data-aos="zoom-in"
+            icon="akar-icons:php-fill"
+            style="color: white"
+            class="workedWith-logos"
+          ></iconify-icon>
+          <iconify-icon
+            data-aos="zoom-in"
             icon="file-icons:expo"
             style="color: white"
-            width="60"
+            class="workedWith-logos"
           ></iconify-icon>
         </div>
       </div>
@@ -761,6 +771,99 @@
                   <img src="images/trivia_2.png" />
                 </div>
                 <div class="controls">
+                  <button class="prev">
+                    <iconify-icon
+                      icon="material-symbols:arrow-circle-left-rounded"
+                      width="40"
+                    ></iconify-icon>
+                  </button>
+                  <button class="next">
+                    <iconify-icon
+                      icon="material-symbols:arrow-circle-right-rounded"
+                      width="40"
+                    ></iconify-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-right"
+          data-aos-easing="ease-in"
+          data-aos-offset="300"
+          class="project"
+        >
+          <div class="project-container">
+            <div class="project-left">
+              <h1 class="project-name">
+                <span>06</span>
+                Weather App (iOS)
+              </h1>
+              <p>A simple application for obtaining weather conditions.</p>
+              <p>
+                This project uses the user's current location as the default
+                location. The app fetches all the necessary data from
+                <a
+                  class="api-links"
+                  href="https://open-meteo.com/"
+                  target="_blank"
+                  >Open-Meteo API</a
+                >.
+              </p>
+              <p>Made with React Native.</p>
+              <h3 class="features">FEATURES</h3>
+              <p>- Current conditions for your location</p>
+              <p>- Search for conditions in any city</p>
+              <p>- Hourly conditions</p>
+              <p>- 14-day forecast</p>
+
+              <div class="using-imgs">
+                <iconify-icon icon="logos:css-3" width="28"></iconify-icon>
+                <iconify-icon icon="logos:react" width="28"></iconify-icon>
+                <iconify-icon
+                  icon="skill-icons:javascript"
+                  width="28"
+                ></iconify-icon>
+                <iconify-icon icon="eos-icons:api" width="28"></iconify-icon>
+                <iconify-icon
+                  icon="simple-icons:ios"
+                  width="28"
+                  color="white"
+                ></iconify-icon>
+              </div>
+
+              <div class="project-btns">
+                <a
+                  class="project-button gitRepo"
+                  target="_blank"
+                  href="https://github.com/gniarchos/weather_app"
+                  >Github Repository</a
+                >
+              </div>
+            </div>
+            <div class="project-right">
+              <div class="slider mobile-app">
+                <div class="slide">
+                  <img class="img-mobile-app" src="images/weather-app_1.png" />
+                </div>
+                <div class="slide">
+                  <img class="img-mobile-app" src="images/weather-app_2.png" />
+                </div>
+                <div class="slide">
+                  <img class="img-mobile-app" src="images/weather-app_3.png" />
+                </div>
+                <div class="slide">
+                  <img class="img-mobile-app" src="images/weather-app_4.png" />
+                </div>
+                <div class="slide">
+                  <img class="img-mobile-app" src="images/weather-app_5.png" />
+                </div>
+                <div class="slide">
+                  <img class="img-mobile-app" src="images/weather-app_6.png" />
+                </div>
+                <div class="controls mobile-app">
                   <button class="prev">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"

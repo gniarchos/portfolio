@@ -58,6 +58,7 @@ body {
   font-weight: 1000;
   margin-top: 4px;
   margin-bottom: 5px;
+  color: rgb(243, 178, 57);
 }
 
 .link {
@@ -252,7 +253,15 @@ canvas {
 .workedWith-wrapper {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.workedWith-logos {
+  font-size: 5rem;
 }
 
 .project {
@@ -363,6 +372,10 @@ canvas {
   bottom: -80px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.mobile-app {
+  margin-bottom: 30px;
 }
 
 .controls button {
@@ -712,5 +725,21 @@ footer {
 
   .header-btns {
     gap: 15px;
+  }
+
+  .slide .img-mobile-app {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 30%;
+  }
+
+  .section-title.workedWith {
+    font-size: 1.8rem;
+  }
+
+  .workedWith-logos {
+    font-size: 3.5rem;
   }
 }
