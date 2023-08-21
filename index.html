@@ -106,7 +106,9 @@
     <nav class="navbar">
       <h3 class="logo-name">G.Niarchos</h3>
       <div class="nav-links">
-        <p class="link" onclick="scrollToProjects()">Projects</p>
+        <p id="projects-link" class="link" onclick="scrollToProjects(this)">
+          Projects
+        </p>
         <p class="link" onclick="scrollToContact()">Contact</p>
       </div>
 
@@ -115,7 +117,13 @@
       </button>
     </nav>
     <div id="mobile-nav" class="mobile-nav">
-      <p class="mobile-link" onclick="scrollToProjects()">Projects</p>
+      <p
+        id="projects-link"
+        class="mobile-link"
+        onclick="scrollToProjects(this)"
+      >
+        Projects
+      </p>
       <p class="mobile-link" onclick="scrollToContact()">Contact</p>
     </div>
     <div class="page">
@@ -159,7 +167,11 @@
           </div>
 
           <div class="header-btns">
-            <button class="view-button" onclick="scrollToProjects()">
+            <button
+              id="view-projects"
+              class="view-button"
+              onclick="scrollToProjects(this)"
+            >
               View Projects
             </button>
             <!-- <a

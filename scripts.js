@@ -8,11 +8,16 @@ menu_btn.addEventListener("click", function () {
   links_btn.classList.toggle("is-active")
 })
 
-function scrollToProjects() {
+function scrollToProjects(element) {
   var proj = document.getElementById("projects")
   proj.scrollIntoView()
-  menu_btn.classList.toggle("is-active")
-  links_btn.classList.toggle("is-active")
+
+  var id = element.id
+
+  if (id !== "view-projects") {
+    menu_btn.classList.toggle("is-active")
+    links_btn.classList.toggle("is-active")
+  }
 }
 
 function scrollToContact() {
