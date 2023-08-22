@@ -215,7 +215,6 @@ canvas {
   background: rgba(255, 255, 255, 0.1);
   text-decoration: none;
   backdrop-filter: blur(2px);
-  cursor: not-allowed;
   display: flex;
   flex-direction: row;
   align-items: center;
