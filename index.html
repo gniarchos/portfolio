@@ -8,9 +8,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -98,7 +97,15 @@
     />
     <meta name="apple-mobile-web-app-title" content="g_niarchos" />
     <meta name="application-name" content="g_niarchos" />
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script
+      src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+      defer
+    ></script>
+    <script src="./scripts.js?v=1" defer></script>
     <title>Giannis Niarchos | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -129,8 +136,6 @@
     <div class="page">
       <div class="header">
         <div id="particles-js"></div>
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
         <div data-aos="fade-up" data-aos-duration="1000" class="header-left">
           <h1>Giannis Niarchos</h1>
 
@@ -347,32 +352,32 @@
               <div class="slider_desktop">
                 <div class="desktopPhotos">
                   <div class="slide">
-                    <img loading="lazy" src="images/tv-time_1.png" />
+                    <img loading="lazy" src="images/tv-time_1.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/tv-time_2.png" />
+                    <img loading="lazy" src="images/tv-time_2.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/tv-time_3.png" />
+                    <img loading="lazy" src="images/tv-time_3.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/tv-time_4.png" />
+                    <img loading="lazy" src="images/tv-time_4.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/tv-time_5.png" />
+                    <img loading="lazy" src="images/tv-time_5.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/tv-time_6.png" />
+                    <img loading="lazy" src="images/tv-time_6.png" alt="" />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -388,6 +393,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/tv-time_1_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -395,6 +401,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/tv-time_2_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -402,6 +409,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/tv-time_3_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -409,6 +417,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/tv-time_4_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -416,6 +425,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/tv-time_5_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -423,17 +433,18 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/tv-time_6_mobile.png"
+                      alt=""
                     />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -535,38 +546,70 @@
               <div class="slider_desktop">
                 <div class="desktopPhotos">
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-thesis_1.png" />
+                    <img
+                      loading="lazy"
+                      src="images/foody-thesis_1.png"
+                      alt=""
+                    />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-thesis_2.png" />
+                    <img
+                      loading="lazy"
+                      src="images/foody-thesis_2.png"
+                      alt=""
+                    />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-thesis_3.png" />
+                    <img
+                      loading="lazy"
+                      src="images/foody-thesis_3.png"
+                      alt=""
+                    />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-thesis_4.png" />
+                    <img
+                      loading="lazy"
+                      src="images/foody-thesis_4.png"
+                      alt=""
+                    />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-thesis_5.png" />
+                    <img
+                      loading="lazy"
+                      src="images/foody-thesis_5.png"
+                      alt=""
+                    />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-thesis_6.png" />
+                    <img
+                      loading="lazy"
+                      src="images/foody-thesis_6.png"
+                      alt=""
+                    />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-thesis_7.png" />
+                    <img
+                      loading="lazy"
+                      src="images/foody-thesis_7.png"
+                      alt=""
+                    />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-thesis_8.png" />
+                    <img
+                      loading="lazy"
+                      src="images/foody-thesis_8.png"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -582,6 +625,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_1_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -589,6 +633,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_2a_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -596,6 +641,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_2b_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -603,6 +649,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_3a_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -610,6 +657,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_3b_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -617,6 +665,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_4_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -624,6 +673,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_5_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -631,6 +681,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_6_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -638,6 +689,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_7_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -645,17 +697,18 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-thesis_8_mobile.png"
+                      alt=""
                     />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -742,44 +795,48 @@
               <div class="slider_desktop">
                 <div class="desktopPhotos">
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_1.png" />
+                    <img loading="lazy" src="images/foody-react_1.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_2.png" />
+                    <img loading="lazy" src="images/foody-react_2.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_3.png" />
+                    <img loading="lazy" src="images/foody-react_3.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_4.png" />
+                    <img loading="lazy" src="images/foody-react_4.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_5.png" />
+                    <img loading="lazy" src="images/foody-react_5.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_6.png" />
+                    <img loading="lazy" src="images/foody-react_6.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_7.png" />
+                    <img loading="lazy" src="images/foody-react_7.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_8.png" />
+                    <img loading="lazy" src="images/foody-react_8.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_9.png" />
+                    <img loading="lazy" src="images/foody-react_9.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/foody-react_10.png" />
+                    <img
+                      loading="lazy"
+                      src="images/foody-react_10.png"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -795,6 +852,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-react_1_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -802,6 +860,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-react_2_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -809,6 +868,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-react_3_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -816,12 +876,14 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-react_4a_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
                     <img
                       loading="lazy"
                       src="images/foody-react_4b_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -829,6 +891,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-react_5_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -836,6 +899,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-react_6_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -843,6 +907,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-react_7_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -850,6 +915,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-react_8_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -857,23 +923,25 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/foody-react_9_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
                     <img
                       loading="lazy"
                       src="images/foody-react_10_mobile.png"
+                      alt=""
                     />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -962,23 +1030,23 @@
               <div class="slider_desktop">
                 <div class="desktopPhotos">
                   <div class="slide">
-                    <img loading="lazy" src="images/wordle_1.png" />
+                    <img loading="lazy" src="images/wordle_1.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/wordle_2.png" />
+                    <img loading="lazy" src="images/wordle_2.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/wordle_3.png" />
+                    <img loading="lazy" src="images/wordle_3.png" alt="" />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -994,6 +1062,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/wordle_1_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -1001,6 +1070,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/wordle_2_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -1008,17 +1078,18 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/wordle_3_mobile.png"
+                      alt=""
                     />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -1104,20 +1175,20 @@
               <div class="slider_desktop">
                 <div class="desktopPhotos">
                   <div class="slide">
-                    <img loading="lazy" src="images/trivia_1.png" />
+                    <img loading="lazy" src="images/trivia_1.png" alt="" />
                   </div>
                   <div class="slide">
-                    <img loading="lazy" src="images/trivia_2.png" />
+                    <img loading="lazy" src="images/trivia_2.png" alt="" />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -1133,6 +1204,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/trivia_1_mobile.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -1140,17 +1212,18 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/trivia_2_mobile.png"
+                      alt=""
                     />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -1224,6 +1297,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/weather-app_1.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -1231,6 +1305,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/weather-app_2.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -1238,6 +1313,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/weather-app_3.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -1245,6 +1321,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/weather-app_4.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -1252,6 +1329,7 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/weather-app_5.png"
+                      alt=""
                     />
                   </div>
                   <div class="slide">
@@ -1259,17 +1337,18 @@
                       loading="lazy"
                       class="img-mobile-app"
                       src="images/weather-app_6.png"
+                      alt=""
                     />
                   </div>
                 </div>
                 <div class="controls">
-                  <button class="prev">
+                  <button class="prev" aria-label="prev-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-left-rounded"
                       width="40"
                     ></iconify-icon>
                   </button>
-                  <button class="next">
+                  <button class="next" aria-label="next-btn">
                     <iconify-icon
                       icon="material-symbols:arrow-circle-right-rounded"
                       width="40"
@@ -1348,5 +1427,4 @@
       <p class="designed-developed">Made by Giannis Niarchos</p>
     </footer>
   </body>
-  <script src="./scripts.js?v=1"></script>
 </html>
