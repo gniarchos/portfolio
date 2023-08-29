@@ -422,6 +422,7 @@ canvas {
   color: #444444;
   font-weight: 600;
   margin: 0;
+  transition: all 200ms ease-in-out;
 }
 
 .device-selection-btn.desktop {
