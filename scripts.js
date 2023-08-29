@@ -1,5 +1,47 @@
 AOS.init()
 
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 99, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffffff" },
+    shape: {
+      type: "circle",
+    },
+    opacity: {
+      value: 1.5,
+      random: true,
+      anim: { enable: true, speed: 1, opacity_min: 0, sync: false },
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: { enable: false, speed: 4, size_min: 0.3, sync: false },
+    },
+    line_linked: {
+      enable: false,
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: "none",
+      random: true,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: { enable: false, rotateX: 600, rotateY: 600 },
+    },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false, mode: "bubble" },
+      onclick: { enable: false, mode: "repulse" },
+      resize: true,
+    },
+  },
+  retina_detect: true,
+})
+
 const menu_btn = document.getElementById("hamburger")
 const links_btn = document.getElementById("mobile-nav")
 
@@ -27,112 +69,119 @@ function scrollToContact() {
   links_btn.classList.toggle("is-active")
 }
 
-const sliders = document.querySelectorAll(".slider")
+let photo_selection = ".slider_desktop"
+let sliders = null
+let currentSlide = 0
 
-sliders.forEach((slider) => {
-  const slides = slider.querySelectorAll(".slide")
-  let currentSlide = 0
+runSlider()
 
-  const showSlide = (slide) => {
-    slides.forEach((slide) => slide.classList.remove("active"))
-    slides[slide].classList.add("active")
-  }
+function runSlider() {
+  let sliders = document.querySelectorAll(photo_selection)
+  sliders.forEach((slider) => {
+    const slides = slider.querySelectorAll(`.slide`)
+    let currentSlide = 0
 
-  const nextSlide = () => {
-    currentSlide++
-    if (currentSlide >= slides.length) {
-      currentSlide = 0
+    const showSlide = (slide) => {
+      slides.forEach((slide) => slide.classList.remove("active"))
+      slides[slide].classList.add("active")
     }
 
-    showSlide(currentSlide)
-  }
+    const nextSlide = () => {
+      currentSlide++
+      if (currentSlide >= slides.length) {
+        currentSlide = 0
+      }
 
-  const prevSlide = () => {
-    currentSlide--
-    if (currentSlide < 0) {
-      currentSlide = slides.length - 1
+      showSlide(currentSlide)
     }
-    showSlide(currentSlide)
-  }
 
-  function initSlider() {
-    showSlide(currentSlide)
-    slider.querySelector(".next").addEventListener("click", nextSlide)
-    slider.querySelector(".prev").addEventListener("click", prevSlide)
-  }
+    const prevSlide = () => {
+      currentSlide--
+      if (currentSlide < 0) {
+        currentSlide = slides.length - 1
+      }
+      showSlide(currentSlide)
+    }
 
-  initSlider()
-})
+    function initSlider() {
+      showSlide(currentSlide)
+      slider.querySelector(".next").addEventListener("click", nextSlide)
+      slider.querySelector(".prev").addEventListener("click", prevSlide)
+    }
 
-particlesJS("particles-js", {
-  particles: {
-    number: { value: 99, density: { enable: true, value_area: 800 } },
-    color: { value: "#ffffff" },
-    shape: {
-      type: "circle",
-      stroke: { width: 0, color: "#000000" },
-      polygon: { nb_sides: 5 },
-      image: { src: "img/github.svg", width: 100, height: 100 },
-    },
-    opacity: {
-      value: 1,
-      random: true,
-      anim: { enable: true, speed: 1, opacity_min: 0, sync: false },
-    },
-    size: {
-      value: 3,
-      random: true,
-      anim: { enable: false, speed: 4, size_min: 0.3, sync: false },
-    },
-    line_linked: {
-      enable: false,
-      distance: 150,
-      color: "#ffffff",
-      opacity: 0.4,
-      width: 1,
-    },
-    move: {
-      enable: true,
-      speed: 1,
-      direction: "none",
-      random: true,
-      straight: false,
-      out_mode: "out",
-      bounce: false,
-      attract: { enable: false, rotateX: 600, rotateY: 600 },
-    },
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: { enable: false, mode: "bubble" },
-      onclick: { enable: false, mode: "repulse" },
-      resize: true,
-    },
-    modes: {
-      grab: { distance: 400, line_linked: { opacity: 1 } },
-      bubble: { distance: 250, size: 0, duration: 2, opacity: 0, speed: 3 },
-      repulse: { distance: 400, duration: 0.4 },
-      push: { particles_nb: 4 },
-      remove: { particles_nb: 2 },
-    },
-  },
-  retina_detect: true,
-})
-var count_particles, stats, update
-stats = new Stats()
-stats.setMode(0)
-stats.domElement.style.position = "absolute"
-stats.domElement.style.left = "0px"
-stats.domElement.style.top = "0px"
-document.body.appendChild(stats.domElement)
-count_particles = document.querySelector(".js-count-particles")
-update = function () {
-  stats.begin()
-  stats.end()
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length
-  }
-  requestAnimationFrame(update)
+    initSlider()
+  })
 }
-requestAnimationFrame(update)
+
+// const desktopButton_1 = document.querySelector(".desktop_1")
+// const mobileButton_1 = document.querySelector(".mobile_1")
+// const desktopButton_2 = document.querySelector(".desktop_2")
+// const mobileButton_2 = document.querySelector(".mobile_2")
+
+// function desktopClicked() {
+//   desktopButton_1.classList.add("fadeButton")
+//   mobileButton_1.classList.remove("fadeButton")
+
+//   desktopButton_2.classList.add("fadeButton")
+//   mobileButton_2.classList.remove("fadeButton")
+
+//   photo_selection = ".slider_desktop"
+
+//   slider_desktop.style.display = "block"
+//   slider_mobile.style.display = "none"
+//   runSlider()
+// }
+
+// function mobileClicked() {
+//   mobileButton_1.classList.add("fadeButton")
+//   desktopButton_1.classList.remove("fadeButton")
+
+//   mobileButton_2.classList.add("fadeButton")
+//   desktopButton_2.classList.remove("fadeButton")
+
+//   photo_selection = ".slider_mobile"
+
+//   slider_desktop.style.display = "none"
+//   slider_mobile.style.display = "block"
+//   runSlider()
+// }
+
+// Get all project elements
+const projects = document.querySelectorAll(".project-container")
+
+// Loop through each project
+projects.forEach((project) => {
+  const desktopPhotosButton = project.querySelector(".desktop")
+  const mobilePhotosButton = project.querySelector(".mobile")
+
+  const slider_desktop = project.querySelector(".slider_desktop")
+  const slider_mobile = project.querySelector(".slider_mobile")
+
+  desktopPhotosButton.addEventListener("click", () => {
+    // Handle desktop photos button click for this project
+    // console.log("Desktop photos clicked for project", project)
+
+    desktopPhotosButton.classList.add("fadeButton")
+    mobilePhotosButton.classList.remove("fadeButton")
+
+    photo_selection = ".slider_desktop"
+
+    slider_desktop.style.display = "block"
+    slider_mobile.style.display = "none"
+    runSlider()
+  })
+
+  mobilePhotosButton.addEventListener("click", () => {
+    // Handle mobile photos button click for this project
+    // console.log("Mobile photos clicked for project", project)
+
+    mobilePhotosButton.classList.add("fadeButton")
+    desktopPhotosButton.classList.remove("fadeButton")
+
+    photo_selection = ".slider_mobile"
+
+    slider_desktop.style.display = "none"
+    slider_mobile.style.display = "block"
+    runSlider()
+  })
+})

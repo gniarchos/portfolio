@@ -263,6 +263,10 @@ canvas {
   font-size: 5rem;
 }
 
+.projects-wrapper {
+  width: 90vw;
+}
+
 .project {
   display: flex;
   flex-direction: row;
@@ -289,7 +293,13 @@ canvas {
 }
 
 .project-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   width: 65%;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 .project-img {
@@ -340,7 +350,14 @@ canvas {
   margin-bottom: 30px;
 }
 
-.slider {
+.slider_desktop {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+}
+
+.slider_mobile {
+  display: none;
   width: 100%;
   min-height: 500px;
   position: relative;
@@ -366,32 +383,74 @@ canvas {
   object-fit: contain;
 }
 
+.mobile-photo img {
+  display: none;
+}
+
 .controls {
   position: absolute;
-  bottom: -80px;
+  bottom: -65px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .mobile-app {
   margin-bottom: 30px;
+  /* display: block; */
 }
 
-.controls button {
+.prev,
+.next {
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: #fff;
 }
 
-.controls button:hover {
+.controls:hover {
   color: rgb(243, 178, 57);
+}
+
+.device-selection-btn {
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: #b3b3b3;
+  color: #444444;
+  font-weight: 600;
+  margin: 0;
+}
+
+.device-selection-btn.desktop {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.device-selection-btn.mobile {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.device-selection-btn.fadeButton {
+  background-color: #fff;
+  color: #1f1f1f;
+}
+
+.device-selection-btn:hover {
+  background-color: #fff;
+  color: #1f1f1f;
 }
 
 .project-btns {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+.project-btns-device {
+  display: flex;
+  flex-direction: row;
 }
 
 .thesis-buttons {
@@ -531,6 +590,12 @@ footer {
     order: 1;
     width: 100%;
     padding-bottom: 80px;
+    margin-top: 0;
+    margin-bottom: -5px;
+  }
+
+  .mobile-only-app {
+    margin-bottom: -60px;
   }
 }
 
@@ -600,6 +665,7 @@ footer {
   }
 
   .projects-wrapper {
+    width: 98vw;
     margin-top: -50px;
   }
 
@@ -624,6 +690,7 @@ footer {
 
   .project-right {
     width: 100%;
+    height: 150px;
   }
 
   .project-left {
