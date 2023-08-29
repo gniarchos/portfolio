@@ -8,11 +8,12 @@ By breaking into University of West Attica at Informatics and Computer Engineeri
 
 ## 🚧 Projects
 
-- [TVTime - Shows Tracker](https://tvtime-app-tracker.web.app/)
-- [Foody (Thesis)](https://foody-thesis.000webhostapp.com/index.php)
-- [Foody (React)](https://foody-d0bd4.web.app/)
-- [Wordle - Greek Edition](https://gniarchos.github.io/wordle-gr/)
-- [Trivia Game](https://gniarchos.github.io/trivia-game/)
+- [TVTime - Shows Tracker](https://tvtime-app-tracker.web.app/) ([Source Code](https://github.com/gniarchos/TVTime-ShowsTracker))
+- [Foody (Thesis)](https://foody-thesis.000webhostapp.com/index.php) ([Source Code](https://github.com/gniarchos/foody-thesis))
+- [Foody (React)](https://foody-d0bd4.web.app/) ([Source Code](https://github.com/gniarchos/foody-react))
+- [Wordle - Greek Edition](https://gniarchos.github.io/wordle-gr/) ([Source Code](https://github.com/gniarchos/wordle-gr))
+- [Trivia Game](https://gniarchos.github.io/trivia-game/) ([Source Code](https://github.com/gniarchos/trivia-game))
+- Weather App (iOS) ([Source Code](https://github.com/gniarchos/weather_app))
 
 ## 🔗 Links
 
