@@ -261,6 +261,8 @@ canvas {
 
 .workedWith-logos {
   font-size: 5rem;
+  height: 100px;
+  width: 100px;
 }
 
 .projects-wrapper {
@@ -599,7 +601,7 @@ footer {
   }
 }
 
-@media all and (max-width: 806px) {
+@media all and (max-width: 875px) {
   footer {
     flex-direction: column;
     justify-content: center;
@@ -828,5 +830,7 @@ footer {
 
   .workedWith-logos {
     font-size: 3.5rem;
+    width: 70px;
+    height: 80px;
   }
 }

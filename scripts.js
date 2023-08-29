@@ -113,43 +113,8 @@ function runSlider() {
   })
 }
 
-// const desktopButton_1 = document.querySelector(".desktop_1")
-// const mobileButton_1 = document.querySelector(".mobile_1")
-// const desktopButton_2 = document.querySelector(".desktop_2")
-// const mobileButton_2 = document.querySelector(".mobile_2")
-
-// function desktopClicked() {
-//   desktopButton_1.classList.add("fadeButton")
-//   mobileButton_1.classList.remove("fadeButton")
-
-//   desktopButton_2.classList.add("fadeButton")
-//   mobileButton_2.classList.remove("fadeButton")
-
-//   photo_selection = ".slider_desktop"
-
-//   slider_desktop.style.display = "block"
-//   slider_mobile.style.display = "none"
-//   runSlider()
-// }
-
-// function mobileClicked() {
-//   mobileButton_1.classList.add("fadeButton")
-//   desktopButton_1.classList.remove("fadeButton")
-
-//   mobileButton_2.classList.add("fadeButton")
-//   desktopButton_2.classList.remove("fadeButton")
-
-//   photo_selection = ".slider_mobile"
-
-//   slider_desktop.style.display = "none"
-//   slider_mobile.style.display = "block"
-//   runSlider()
-// }
-
-// Get all project elements
 const projects = document.querySelectorAll(".project-container")
 
-// Loop through each project
 projects.forEach((project) => {
   const desktopPhotosButton = project.querySelector(".desktop")
   const mobilePhotosButton = project.querySelector(".mobile")
@@ -158,9 +123,6 @@ projects.forEach((project) => {
   const slider_mobile = project.querySelector(".slider_mobile")
 
   desktopPhotosButton.addEventListener("click", () => {
-    // Handle desktop photos button click for this project
-    // console.log("Desktop photos clicked for project", project)
-
     desktopPhotosButton.classList.add("fadeButton")
     mobilePhotosButton.classList.remove("fadeButton")
 
@@ -172,9 +134,6 @@ projects.forEach((project) => {
   })
 
   mobilePhotosButton.addEventListener("click", () => {
-    // Handle mobile photos button click for this project
-    // console.log("Mobile photos clicked for project", project)
-
     mobilePhotosButton.classList.add("fadeButton")
     desktopPhotosButton.classList.remove("fadeButton")
 
