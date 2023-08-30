@@ -179,21 +179,6 @@ canvas {
   background-position: 50% 50%;
 }
 
-#stats,
-.count-particles {
-  user-select: none;
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-.count-particles {
-  border-radius: 0 0 3px 3px;
-}
-
 .view-button {
   background: transparent;
   padding: 8px;
@@ -399,7 +384,6 @@ canvas {
 
 .mobile-app {
   margin-bottom: 30px;
-  /* display: block; */
 }
 
 .prev,
