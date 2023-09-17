@@ -185,8 +185,8 @@
               target="_blank"
               >My Resume
               <iconify-icon
+                class="download-img"
                 icon="humbleicons:download"
-                width="30"
               ></iconify-icon
             ></a>
           </div>
@@ -201,77 +201,70 @@
             icon="akar-icons:html-fill"
             style="color: white"
             class="workedWith-logos"
-            title="HTML"
+            data-title="HTML"
           ></iconify-icon>
           <iconify-icon
             data-aos="zoom-in"
             icon="akar-icons:css-fill"
             style="color: white"
             class="workedWith-logos"
-            title="CSS"
+            data-title="CSS"
           ></iconify-icon>
           <iconify-icon
             data-aos="zoom-in"
             icon="ri:javascript-fill"
             style="color: white"
             class="workedWith-logos"
-            title="JavaScript"
+            data-title="JavaScript"
           ></iconify-icon>
           <iconify-icon
             data-aos="zoom-in"
             icon="teenyicons:react-outline"
             style="color: white"
             class="workedWith-logos"
-            title="React"
+            data-title="React"
           ></iconify-icon>
           <iconify-icon
             data-aos="zoom-in"
             icon="grommet-icons:mysql"
             style="color: white"
             class="workedWith-logos"
-            title="MySQL"
+            data-title="MySQL"
           ></iconify-icon>
           <iconify-icon
             data-aos="zoom-in"
             icon="mdi:firebase"
             style="color: white"
             class="workedWith-logos"
-            title="Firebase"
+            data-title="Firebase"
           ></iconify-icon>
           <iconify-icon
             data-aos="zoom-in"
             icon="eos-icons:api"
             style="color: white"
             class="workedWith-logos"
-            title="API"
+            data-title="API"
           ></iconify-icon>
           <iconify-icon
             data-aos="zoom-in"
             icon="simple-icons:git"
             style="color: white"
             class="workedWith-logos"
-            title="Git"
+            data-title="Git"
           ></iconify-icon>
           <iconify-icon
             data-aos="zoom-in"
             icon="akar-icons:php-fill"
             style="color: white"
             class="workedWith-logos"
-            title="php"
+            data-title="php"
           ></iconify-icon>
           <iconify-icon
             data-aos="zoom-in"
             icon="file-icons:expo"
             style="color: white"
             class="workedWith-logos"
-            title="Expo"
-          ></iconify-icon>
-          <iconify-icon
-            data-aos="zoom-in"
-            icon="devicon-plain:photoshop"
-            style="color: white"
-            class="workedWith-logos"
-            title="Adobe Photoshop"
+            data-title="Expo"
           ></iconify-icon>
         </div>
       </div>
@@ -287,100 +280,115 @@
         >
           <div class="project-container">
             <div class="project-left">
-              <p class="project-period">2022 - Present</p>
               <h1 class="project-name">
                 <span>01</span>
                 TVTime - Shows Tracker
               </h1>
-
               <p>
                 A TV Shows organizer to track and find information about any TV
                 Show.
               </p>
               <p>
-                This project uses the Firebase Database for login/signup and for
-                user data. The app fetches all the necessary data from two
-                different APIs,
+                This project utilizes the Firebase Database for login/signup and
+                storing user data. The app fetches all the necessary information
+                from various APIs:
                 <a
                   class="api-links"
                   target="_blank"
                   href="https://developer.themoviedb.org/docs"
                   >TheMovieDB API</a
                 >
-                and
+                for TV show details, the
                 <a
                   class="api-links"
                   target="_blank"
                   href="https://rapidapi.com/linaspurinis/api/mdblist/"
                   >MDBList API</a
-                >.
+                >
+                for TV show ratings, and the
+                <a
+                  class="api-links"
+                  target="_blank"
+                  href="https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability"
+                  >Streaming Availability API</a
+                >
+                for TV show streaming availability in the user's country.
               </p>
-              <h3 class="features">FEATURES</h3>
-              <p>- Add shows to your Watchlist</p>
-              <p>- Mark episodes as watched or un-watched</p>
-              <p>- Mark entire seasons as watched</p>
-              <p>- Cast and crew information</p>
-              <p>- Details about seasons and shows</p>
-              <p>- Trending and popular shows</p>
-              <p>- History of watched episodes</p>
-              <p>- Search for any TV show and apply filters</p>
-              <p>- User statistics for total TV watch time and episode count</p>
-
-              <div class="using-imgs">
-                <iconify-icon
-                  title="HTLM"
-                  icon="logos:html-5"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="CSS"
-                  icon="logos:css-3"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="Firebase"
-                  icon="vscode-icons:file-type-firebase"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="React"
-                  icon="logos:react"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="JavaScript"
-                  icon="skill-icons:javascript"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="API"
-                  icon="eos-icons:api"
-                  width="30"
-                ></iconify-icon>
-                <iconify-icon
-                  title="PWA - Standalone app"
-                  icon="simple-icons:pwa"
-                  width="35"
-                  color="white"
-                ></iconify-icon>
+              <div class="detailed-project-info">
+                <h3 class="features">FEATURES</h3>
+                <p>- Add shows to your Watchlist</p>
+                <p>- Mark episodes as watched or un-watched</p>
+                <p>- Mark entire seasons as watched</p>
+                <p>- Cast and crew information</p>
+                <p>- Details about seasons and shows</p>
+                <p>- Trending and popular shows</p>
+                <p>- History of watched episodes</p>
+                <p>- Search for any TV show and apply filters</p>
+                <p>
+                  - User statistics for total TV watch time and episode count
+                </p>
+                <p>- Streaming availability in the user's country</p>
               </div>
+              <button class="read-more-btn">Read More</button>
+              <div class="projects-additionalInfo-wrapper">
+                <p class="project-period">May 2022 - Present</p>
+                <div class="using-imgs">
+                  <iconify-icon
+                    title="HTLM"
+                    icon="logos:html-5"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="CSS"
+                    icon="logos:css-3"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="Firebase"
+                    icon="vscode-icons:file-type-firebase"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="React"
+                    icon="logos:react"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="JavaScript"
+                    icon="skill-icons:javascript"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="API"
+                    icon="eos-icons:api"
+                    width="30"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="PWA - Standalone app"
+                    icon="simple-icons:pwa"
+                    width="35"
+                    color="white"
+                  ></iconify-icon>
+                </div>
 
-              <div class="project-btns">
-                <a
-                  class="project-button"
-                  target="_blank"
-                  href="https://tvtime-app-tracker.web.app/"
-                >
-                  Live Demo
-                </a>
-                <a
-                  class="project-button gitRepo"
-                  target="_blank"
-                  href="https://github.com/gniarchos/TVTime-ShowsTracker"
-                  >Github Repository</a
-                >
+                <div class="project-btns">
+                  <a
+                    class="project-button"
+                    target="_blank"
+                    href="https://tvtime-app-tracker.web.app/"
+                  >
+                    Live Site
+                  </a>
+                  <a
+                    class="project-button gitRepo"
+                    target="_blank"
+                    href="https://github.com/gniarchos/TVTime-ShowsTracker"
+                    >Github Repository</a
+                  >
+                </div>
               </div>
             </div>
+
             <div class="project-right">
               <div class="project-btns-device">
                 <button class="device-selection-btn desktop fadeButton">
@@ -514,7 +522,6 @@
         >
           <div class="project-container">
             <div class="project-left">
-              <p class="project-period">NOVEMBER 2021 - JUNE 2022</p>
               <h1 class="project-name">
                 <span>02</span>
                 Foody (Thesis)
@@ -524,9 +531,9 @@
                 Interfaces.
               </p>
               <p>
-                This project uses the MySQL server for login/signup and for user
-                data. The app fetches all the data from the MySQL server and the
-                connection is established using PHP.
+                The project utilizes a MySQL server for user login/signup and
+                data storage. The app fetches all the data from the MySQL server
+                and the connection is established using PHP.
               </p>
               <p>
                 Documentation can be found in
@@ -538,70 +545,77 @@
                 >
                 of University of West Attica.
               </p>
-              <div class="thesis-info">
-                <div>
-                  <h3 class="features">FEATURES</h3>
-                  <p>- Order from a variety of restaurants</p>
-                  <p>- Search for restaurants</p>
-                  <p>- Apply filters</p>
-                  <p>- View restaurant's menu</p>
-                  <p>- Place orders</p>
-                  <p>- View order summary</p>
-                  <p>- Submit and read reviews</p>
-                </div>
+              <div class="detailed-project-info">
+                <div class="thesis-info">
+                  <div>
+                    <h3 class="features">FEATURES</h3>
+                    <p>- Order from various types of restaurants</p>
+                    <p>- Restaurant search based on various criteria</p>
+                    <p>- Apply of filters to enhance search</p>
+                    <p>- View the menu of each restaurant.</p>
+                    <p>- Place orders</p>
+                    <p>- Order summary</p>
+                    <p>- User reviews and ratings for restaurants</p>
+                  </div>
 
-                <div>
-                  <h3 class="features">Adaptivity based on:</h3>
-                  <p>- Time of day</p>
-                  <p>- User's preferences</p>
-                  <p>- User's age</p>
-                  <p>- User's location</p>
-                  <p>- User's device</p>
+                  <div>
+                    <h3 class="features">Adaptivity based on:</h3>
+                    <p>- Time of day</p>
+                    <p>- User's preferences</p>
+                    <p>- User's age</p>
+                    <p>- User's location</p>
+                    <p>- User's device</p>
+                  </div>
                 </div>
               </div>
 
-              <div class="using-imgs">
-                <iconify-icon
-                  title="HTLM"
-                  icon="logos:html-5"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="CSS"
-                  icon="logos:css-3"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="JavaScript"
-                  icon="skill-icons:javascript"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="PHP"
-                  icon="logos:php"
-                  width="35"
-                ></iconify-icon>
-                <iconify-icon
-                  title="MySQL"
-                  icon="logos:mysql"
-                  width="40"
-                ></iconify-icon>
-              </div>
+              <button class="read-more-btn">Read More</button>
+              <div class="projects-additionalInfo-wrapper">
+                <p class="project-period">November 2021 - June 2022</p>
 
-              <div class="project-btns thesis-buttons">
-                <a
-                  class="project-button"
-                  target="_blank"
-                  href="https://foody-thesis.000webhostapp.com/index.php"
-                >
-                  Live Demo
-                </a>
-                <a
-                  class="project-button gitRepo"
-                  target="_blank"
-                  href="https://github.com/gniarchos/foody-thesis"
-                  >Github Repository</a
-                >
+                <div class="using-imgs">
+                  <iconify-icon
+                    title="HTLM"
+                    icon="logos:html-5"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="CSS"
+                    icon="logos:css-3"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="JavaScript"
+                    icon="skill-icons:javascript"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="PHP"
+                    icon="logos:php"
+                    width="35"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="MySQL"
+                    icon="logos:mysql"
+                    width="40"
+                  ></iconify-icon>
+                </div>
+
+                <div class="project-btns thesis-buttons">
+                  <a
+                    class="project-button"
+                    target="_blank"
+                    href="https://foody-thesis.000webhostapp.com/index.php"
+                  >
+                    Live Site
+                  </a>
+                  <a
+                    class="project-button gitRepo"
+                    target="_blank"
+                    href="https://github.com/gniarchos/foody-thesis"
+                    >Github Repository</a
+                  >
+                </div>
               </div>
             </div>
             <div class="project-right">
@@ -796,82 +810,90 @@
         >
           <div class="project-container">
             <div class="project-left">
-              <p class="project-period">FEBRUARY 2022</p>
               <h1 class="project-name">
                 <span>03</span>
                 Foody (React)
               </h1>
               <p>
-                My first big React project, uses the concepts and ideas from my
-                thesis, redesigned using React.
+                This project was based on the initial concept of the web
+                application developed for my thesis, redesigned using React.
               </p>
               <p>
-                This project's UI is inspired by the
+                The aim of this project was to expand upon the original idea of
+                my thesis, by incorporating new features inspired by well-known
+                food delivery platforms such as
                 <a style="color: white" href="https://www.e-food.gr/">Efood</a>
                 and
-                <a style="color: white" href="https://wolt.com/en/grc">Wolt</a>
-                websites. It uses the Firebase Database for login/signup and for
-                user data. The app fetches all the necessary data from the
-                database.
+                <a style="color: white" href="https://wolt.com/en/grc">Wolt</a>.
+                Foody, utilizes the Firebase Database for login/signup and
+                storing user data. The app fetches all the necessary data from
+                the database.
               </p>
-              <h3 class="features">FEATURES</h3>
-              <p>- Order from a variety of restaurants</p>
-              <p>- Search for restaurants</p>
-              <p>- Apply filters</p>
-              <p>- View restaurant's menu</p>
-              <p>- Place orders</p>
-              <p>- View order summary</p>
-              <p>- Submit and read reviews</p>
-              <p>- View restaurants that recently ordered</p>
-
-              <div class="using-imgs">
-                <iconify-icon
-                  title="HTLM"
-                  icon="logos:html-5"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="CSS"
-                  icon="logos:css-3"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="JavaScript"
-                  icon="skill-icons:javascript"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="React"
-                  icon="logos:react"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="Firebase"
-                  icon="vscode-icons:file-type-firebase"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="PWA - Standalone app"
-                  icon="simple-icons:pwa"
-                  width="35"
-                  color="white"
-                ></iconify-icon>
+              <div class="detailed-project-info">
+                <h3 class="features">FEATURES</h3>
+                <p>- Order from various types of restaurants</p>
+                <p>- Restaurant search based on various criteria</p>
+                <p>- Apply filters to enhance search</p>
+                <p>- View the menu of each restaurant</p>
+                <p>- Place orders</p>
+                <p>- Order summary</p>
+                <p>- User reviews and ratings for restaurants</p>
+                <p>- View restaurants that recently ordered</p>
               </div>
+              <button class="read-more-btn">Read More</button>
 
-              <div class="project-btns">
-                <a
-                  class="project-button"
-                  target="_blank"
-                  href="https://foody-d0bd4.web.app/"
-                >
-                  Live Demo
-                </a>
-                <a
-                  class="project-button gitRepo"
-                  target="_blank"
-                  href="https://github.com/gniarchos/foody-react"
-                  >Github Repository</a
-                >
+              <div class="projects-additionalInfo-wrapper">
+                <p class="project-period">February - July 2022</p>
+
+                <div class="using-imgs">
+                  <iconify-icon
+                    title="HTLM"
+                    icon="logos:html-5"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="CSS"
+                    icon="logos:css-3"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="JavaScript"
+                    icon="skill-icons:javascript"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="React"
+                    icon="logos:react"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="Firebase"
+                    icon="vscode-icons:file-type-firebase"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="PWA - Standalone app"
+                    icon="simple-icons:pwa"
+                    width="35"
+                    color="white"
+                  ></iconify-icon>
+                </div>
+
+                <div class="project-btns">
+                  <a
+                    class="project-button"
+                    target="_blank"
+                    href="https://foody-d0bd4.web.app/"
+                  >
+                    Live Site
+                  </a>
+                  <a
+                    class="project-button gitRepo"
+                    target="_blank"
+                    href="https://github.com/gniarchos/foody-react"
+                    >Github Repository</a
+                  >
+                </div>
               </div>
             </div>
             <div class="project-right">
@@ -971,6 +993,7 @@
                   <div class="slide">
                     <img
                       loading="lazy"
+                      class="img-mobile-app"
                       src="images/foody-react_4b_mobile.png"
                       alt=""
                     />
@@ -1018,6 +1041,7 @@
                   <div class="slide">
                     <img
                       loading="lazy"
+                      class="img-mobile-app"
                       src="images/foody-react_10_mobile.png"
                       alt=""
                     />
@@ -1050,7 +1074,6 @@
         >
           <div class="project-container">
             <div class="project-left">
-              <p class="project-period">APRIL 2022</p>
               <h1 class="project-name">
                 <span>04</span>
                 Wordle - Greek Edition
@@ -1064,6 +1087,7 @@
                   >Wordle</a
                 >.
               </p>
+
               <h3 class="features">How to play</h3>
               <p>
                 The goal of the game is to guess the word within six tries. Each
@@ -1071,60 +1095,67 @@
                 color of the tiles will change to indicate how close your guess
                 was to the answer.
               </p>
-              <p>🟩 The letter is in the word and in the correct spot.</p>
-              <p>🟧 The letter is in the word but in the wrong spot.</p>
-              <p>⬛ The letter is not in the word in any spot.</p>
+              <div class="detailed-project-info">
+                <p>🟩 The letter is in the word and in the correct spot.</p>
+                <p>🟧 The letter is in the word but in the wrong spot.</p>
+                <p>⬛ The letter is not in the word in any spot.</p>
 
-              <h3 class="features">FEATURES</h3>
-              <p>- Daily infinite words</p>
-              <p>- User statistics</p>
-              <p>- Dark & Light mode</p>
-              <p>- Greek words only</p>
-              <p>- 7433 total words</p>
-
-              <div class="using-imgs">
-                <iconify-icon
-                  title="HTLM"
-                  icon="logos:html-5"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="CSS"
-                  icon="logos:css-3"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="JavaScript"
-                  icon="skill-icons:javascript"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="React"
-                  icon="logos:react"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="PWA - Standalone app"
-                  icon="simple-icons:pwa"
-                  width="35"
-                  color="white"
-                ></iconify-icon>
+                <h3 class="features">FEATURES</h3>
+                <p>- Daily infinite words</p>
+                <p>- User statistics</p>
+                <p>- Dark & Light mode</p>
+                <p>- Greek words only</p>
+                <p>- 7433 total words</p>
               </div>
 
-              <div class="project-btns">
-                <a
-                  class="project-button"
-                  target="_blank"
-                  href="https://gniarchos.github.io/wordle-gr/"
-                >
-                  Live Demo
-                </a>
-                <a
-                  class="project-button gitRepo"
-                  target="_blank"
-                  href="https://github.com/gniarchos/wordle-gr"
-                  >Github Repository</a
-                >
+              <button class="read-more-btn">Read More</button>
+              <div class="projects-additionalInfo-wrapper">
+                <p class="project-period">April 2022</p>
+
+                <div class="using-imgs">
+                  <iconify-icon
+                    title="HTLM"
+                    icon="logos:html-5"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="CSS"
+                    icon="logos:css-3"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="JavaScript"
+                    icon="skill-icons:javascript"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="React"
+                    icon="logos:react"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="PWA - Standalone app"
+                    icon="simple-icons:pwa"
+                    width="35"
+                    color="white"
+                  ></iconify-icon>
+                </div>
+
+                <div class="project-btns">
+                  <a
+                    class="project-button"
+                    target="_blank"
+                    href="https://gniarchos.github.io/wordle-gr/"
+                  >
+                    Live Site
+                  </a>
+                  <a
+                    class="project-button gitRepo"
+                    target="_blank"
+                    href="https://github.com/gniarchos/wordle-gr"
+                    >Github Repository</a
+                  >
+                </div>
               </div>
             </div>
 
@@ -1217,7 +1248,6 @@
         >
           <div class="project-container">
             <div class="project-left">
-              <p class="project-period">JANUARY 2022</p>
               <h1 class="project-name">
                 <span>05</span>
                 Trivia Game
@@ -1235,56 +1265,62 @@
               <p>
                 3. Press "Show Results" to see how many correct answers you got
               </p>
-
-              <h3 class="features">FEATURES</h3>
-              <p>- Set the number of questions</p>
-              <p>- Set the questions category (optional)</p>
-              <p>- Set the questions difficulty (optional)</p>
-              <p>- See the number of correct answers</p>
-
-              <div class="using-imgs">
-                <iconify-icon
-                  title="HTLM"
-                  icon="logos:html-5"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="CSS"
-                  icon="logos:css-3"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="JavaScript"
-                  icon="skill-icons:javascript"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="React"
-                  icon="logos:react"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="PWA - Standalone app"
-                  icon="simple-icons:pwa"
-                  width="35"
-                  color="white"
-                ></iconify-icon>
+              <div class="detailed-project-info">
+                <h3 class="features">FEATURES</h3>
+                <p>- Set the number of questions</p>
+                <p>- Set the questions category (optional)</p>
+                <p>- Set the questions difficulty (optional)</p>
+                <p>- See the number of correct answers</p>
               </div>
+              <button class="read-more-btn">Read More</button>
 
-              <div class="project-btns">
-                <a
-                  class="project-button"
-                  target="_blank"
-                  href="https://gniarchos.github.io/trivia-game/"
-                >
-                  Live Demo
-                </a>
-                <a
-                  class="project-button gitRepo"
-                  target="_blank"
-                  href="https://github.com/gniarchos/trivia-game"
-                  >Github Repository</a
-                >
+              <div class="projects-additionalInfo-wrapper">
+                <p class="project-period">January 2022</p>
+
+                <div class="using-imgs">
+                  <iconify-icon
+                    title="HTLM"
+                    icon="logos:html-5"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="CSS"
+                    icon="logos:css-3"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="JavaScript"
+                    icon="skill-icons:javascript"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="React"
+                    icon="logos:react"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="PWA - Standalone app"
+                    icon="simple-icons:pwa"
+                    width="35"
+                    color="white"
+                  ></iconify-icon>
+                </div>
+
+                <div class="project-btns">
+                  <a
+                    class="project-button"
+                    target="_blank"
+                    href="https://gniarchos.github.io/trivia-game/"
+                  >
+                    Live Site
+                  </a>
+                  <a
+                    class="project-button gitRepo"
+                    target="_blank"
+                    href="https://github.com/gniarchos/trivia-game"
+                    >Github Repository</a
+                  >
+                </div>
               </div>
             </div>
 
@@ -1366,10 +1402,9 @@
         >
           <div class="project-container">
             <div class="project-left">
-              <p class="project-period">APRIL 2023</p>
               <h1 class="project-name">
                 <span>06</span>
-                Weather App (iOS)
+                Weather App
               </h1>
               <p>A simple application for obtaining weather conditions.</p>
               <p>
@@ -1383,54 +1418,63 @@
                 >.
               </p>
               <p>Made with React Native.</p>
-              <h3 class="features">FEATURES</h3>
-              <p>- Current conditions for your location</p>
-              <p>- Search for conditions in any city</p>
-              <p>- Hourly conditions</p>
-              <p>- 14-day forecast</p>
-
-              <div class="using-imgs">
-                <iconify-icon
-                  title="HTLM"
-                  icon="logos:css-3"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="CSS"
-                  icon="logos:react"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="JavaScript"
-                  icon="skill-icons:javascript"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="API"
-                  icon="eos-icons:api"
-                  width="28"
-                ></iconify-icon>
-                <iconify-icon
-                  title="Expo"
-                  icon="cib:expo"
-                  width="28"
-                  color="white"
-                ></iconify-icon>
-                <iconify-icon
-                  title="iOS"
-                  icon="simple-icons:ios"
-                  width="28"
-                  color="white"
-                ></iconify-icon>
+              <p>Tested and developed in iOS</p>
+              <div class="detailed-project-info">
+                <h3 class="features">FEATURES</h3>
+                <p>- Current conditions for your location</p>
+                <p>- Search for conditions in any city</p>
+                <p>- Hourly conditions</p>
+                <p>- 14-day forecast</p>
               </div>
 
-              <div class="project-btns">
-                <a
-                  class="project-button gitRepo"
-                  target="_blank"
-                  href="https://github.com/gniarchos/weather_app"
-                  >Github Repository</a
-                >
+              <button class="read-more-btn">Read More</button>
+
+              <div class="projects-additionalInfo-wrapper">
+                <p class="project-period">April 2023</p>
+
+                <div class="using-imgs">
+                  <iconify-icon
+                    title="HTLM"
+                    icon="logos:css-3"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="CSS"
+                    icon="logos:react"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="JavaScript"
+                    icon="skill-icons:javascript"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="API"
+                    icon="eos-icons:api"
+                    width="28"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="Expo"
+                    icon="cib:expo"
+                    width="28"
+                    color="white"
+                  ></iconify-icon>
+                  <iconify-icon
+                    title="iOS"
+                    icon="simple-icons:ios"
+                    width="28"
+                    color="white"
+                  ></iconify-icon>
+                </div>
+
+                <div class="project-btns">
+                  <a
+                    class="project-button gitRepo"
+                    target="_blank"
+                    href="https://github.com/gniarchos/weather_app"
+                    >Github Repository</a
+                  >
+                </div>
               </div>
             </div>
             <div class="project-right mobile-only-app">

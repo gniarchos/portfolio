@@ -122,7 +122,7 @@ projects.forEach((project) => {
   const slider_desktop = project.querySelector(".slider_desktop")
   const slider_mobile = project.querySelector(".slider_mobile")
 
-  desktopPhotosButton.addEventListener("click", () => {
+  desktopPhotosButton?.addEventListener("click", () => {
     desktopPhotosButton.classList.add("fadeButton")
     mobilePhotosButton.classList.remove("fadeButton")
 
@@ -133,7 +133,7 @@ projects.forEach((project) => {
     runSlider()
   })
 
-  mobilePhotosButton.addEventListener("click", () => {
+  mobilePhotosButton?.addEventListener("click", () => {
     mobilePhotosButton.classList.add("fadeButton")
     desktopPhotosButton.classList.remove("fadeButton")
 
@@ -142,5 +142,13 @@ projects.forEach((project) => {
     slider_desktop.style.display = "none"
     slider_mobile.style.display = "block"
     runSlider()
+  })
+
+  const readMore_btn = project.querySelector(".read-more-btn")
+  const project_details_div = project.querySelector(".detailed-project-info")
+
+  readMore_btn.addEventListener("click", () => {
+    project_details_div.classList.toggle("expand")
+    readMore_btn.style.display = "none"
   })
 })
