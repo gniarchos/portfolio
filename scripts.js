@@ -146,9 +146,33 @@ projects.forEach((project) => {
 
   const readMore_btn = project.querySelector(".read-more-btn")
   const project_details_div = project.querySelector(".detailed-project-info")
+  const allElements_projects = document.querySelectorAll(
+    ".detailed-project-info"
+  )
+
+  // ALL PROJECTS EXCEPT CURRENT
+  const projectsArray = Array.from(allElements_projects)
+  const allProjects_exceptCurrent = projectsArray.filter(
+    (element) => element !== project_details_div
+  )
+
+  // ALL BUTTONS EXCEPT CURRENT
+  const allElements_readMore = document.querySelectorAll(".read-more-btn")
+  const buttonsArray = Array.from(allElements_readMore)
+  const allButtons_exceptCurrent = buttonsArray.filter(
+    (element) => element !== readMore_btn
+  )
 
   readMore_btn.addEventListener("click", () => {
     project_details_div.classList.toggle("expand")
     readMore_btn.style.display = "none"
+
+    allProjects_exceptCurrent.map((readMoreButton) => {
+      readMoreButton.classList.remove("expand")
+    })
+
+    allButtons_exceptCurrent.map((readMoreButton) => {
+      readMoreButton.style.display = "block"
+    })
   })
 })

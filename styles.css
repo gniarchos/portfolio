@@ -328,7 +328,7 @@ canvas {
   padding-left: 8px;
   padding-right: 8px;
   transition: all 500ms ease-in-out;
-  margin-bottom: 95px;
+  margin-bottom: 130px;
 }
 
 .read-more-btn:hover {
@@ -393,8 +393,8 @@ canvas {
 
 .thesis-info {
   display: flex;
-  flex-direction: row;
-  gap: 5%;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .features {
@@ -707,12 +707,6 @@ footer p {
 
   .section-title {
     font-size: 1.8rem;
-  }
-}
-
-@media all and (max-width: 580px) {
-  .thesis-info {
-    flex-direction: column;
   }
 }
 
