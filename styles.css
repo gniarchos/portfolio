@@ -305,13 +305,20 @@ canvas {
 }
 
 .detailed-project-info {
+  /* max-height: 0;
+  transition: max-height 2 ease-in-out; */
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+}
+
+.detailed-project-info > div {
   overflow: hidden;
-  max-height: 0;
-  transition: max-height 2 ease-in-out;
 }
 
 .detailed-project-info.expand {
-  max-height: none;
+  /* max-height: none; */
+  grid-template-rows: 1fr;
 }
 
 .read-more-btn {
