@@ -763,6 +763,7 @@ footer p {
 
   .project-name {
     font-size: 1.5rem;
+    margin-top: 0px;
   }
 
   .projects-wrapper {
@@ -777,10 +778,6 @@ footer p {
 
   .project-container {
     width: 100%;
-  }
-
-  .project-name {
-    margin-top: 0px;
   }
 
   .controls {
