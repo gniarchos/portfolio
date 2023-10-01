@@ -1,6 +1,7 @@
 # 💻 My Portfolio
 
 This is my portfolio that contains all my updated projects.
+
 Made with React and Typescript.
 
 ## 🚀 About Me
