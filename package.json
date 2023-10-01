@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://gniarchos.github.io/portfolio",
+  "homepage": "https://gniarchos.github.io/portfolio/",
   "private": true,
   "types": "dist/index",
   "dependencies": {
