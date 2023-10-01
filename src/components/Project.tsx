@@ -114,7 +114,7 @@ export default function Project(props: ProjectProps) {
     <div
       className={
         handleAnimations
-          ? "project animate__animated animate__fadeInUp"
+          ? "project animate__animated animate__fadeIn"
           : "hidden_for_animation"
       }
     >
