@@ -1,0 +1,88 @@
+.contact-wrapper {
+  width: 50vw;
+  z-index: 2;
+}
+
+.myEmail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.myEmail a {
+  color: #f1f7ee;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  height: 40px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #ebe9e9;
+}
+
+form label {
+  font-size: 1.2rem;
+}
+
+form textarea {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  resize: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #ebe9e9;
+}
+
+.submit {
+  width: 150px;
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  transition: all 250ms ease-in;
+  border: 2px solid #f1f7ee;
+  color: #f1f7ee;
+}
+
+.submit:hover {
+  box-shadow: rgba(255, 255, 255, 0.603) 0px 3px 8px;
+}
+
+/* MOBILE */
+@media all and (max-width: 499px) {
+  .contact-wrapper {
+    width: 95vw;
+  }
+
+  .myEmail {
+    margin-top: 0;
+  }
+
+  form input {
+    width: 92vw;
+  }
+
+  form textarea {
+    width: 92vw;
+  }
+}

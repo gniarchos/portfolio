@@ -1,0 +1,30 @@
+footer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(44, 44, 44);
+  margin-top: 50px;
+  font-size: 1.2rem;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  width: 100%;
+  z-index: 2;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.source-code {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}

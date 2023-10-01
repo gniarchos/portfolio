@@ -1,0 +1,290 @@
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 730px;
+}
+
+.project-container {
+  background-color: #2b2b2b;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 18px;
+  padding-top: 0px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.project-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 39%;
+  height: 100%;
+}
+
+.project-name {
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+
+.project-name span {
+  padding-right: 8px;
+  color: rgb(243, 178, 57);
+  font-weight: 800;
+}
+
+.api-links {
+  color: white;
+}
+
+.detailed-project-info {
+  height: 0px;
+  transition: height 500ms;
+  width: 100%;
+  overflow: hidden;
+}
+
+.detailed-project-info > div {
+  overflow: auto;
+}
+
+.features {
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.read-more-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  background-color: #4d4d4d75;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition: all 500ms ease-in-out;
+}
+
+.read-more-btn:hover {
+  text-decoration: white dashed;
+  color: rgb(243, 178, 57);
+}
+
+.projects-additionalInfo-wrapper {
+  position: absolute;
+  bottom: 40px;
+}
+
+.project-period {
+  margin-top: 30px;
+  color: rgb(243, 178, 57);
+  font-size: 1rem;
+  margin-bottom: -10px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.using-imgs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.project-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: -20px;
+}
+
+.project-button-link {
+  background: transparent;
+  padding: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  transition: all 250ms ease-in;
+  border: 1px solid #f1f7ee;
+  color: #f1f7ee;
+  text-decoration: none;
+}
+
+.project-button-link:hover {
+  box-shadow: rgba(255, 255, 255, 0.603) 0px 3px 8px;
+}
+
+.gitRepo {
+  background: rgb(241, 247, 238, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+.project-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  gap: 15px;
+  padding-top: 30px;
+}
+
+.project-btns-device {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.project-btns-device.hideButtons {
+  visibility: hidden;
+}
+
+.device-selection-btn {
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: #979797;
+  color: #444444;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.device-selection-btn.desktop {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.device-selection-btn.mobile {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.device-selection-btn.fadeButton {
+  background-color: #fff;
+  color: #1f1f1f;
+}
+
+.device-selection-btn:hover {
+  background-color: #fff;
+  color: #1f1f1f;
+  padding: 5px;
+}
+
+/* carousel --start*/
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  opacity: 1;
+  width: 50px;
+}
+
+.carousel .thumb {
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.carousel .thumb:hover {
+  border: 2px solid var(--secondary-orange-color);
+}
+
+.carousel .thumb.selected {
+  border: 2px solid var(--secondary-orange-color);
+}
+
+.carousel-root {
+  width: 100%;
+}
+
+/* carousel ---end */
+
+.project.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
+}
+
+@media all and (max-width: 1200px) {
+  .project {
+    height: auto;
+  }
+
+  .projects-additionalInfo-wrapper {
+    position: relative;
+    bottom: 15px;
+  }
+
+  .project-container {
+    flex-direction: column;
+  }
+
+  .project-left {
+    width: 100%;
+    order: 2;
+    margin-top: -40px;
+  }
+
+  .read-more-btn {
+    margin-bottom: 0px;
+  }
+
+  .project-right {
+    order: 1;
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+@media all and (max-width: 499px) {
+  .project {
+    height: auto;
+  }
+
+  .project-container {
+    width: 100%;
+  }
+
+  .project-left {
+    width: 100%;
+  }
+
+  .project-name {
+    font-size: 1.5rem;
+    margin-top: 0px;
+  }
+
+  .project-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-root {
+    width: 95vw;
+  }
+}
