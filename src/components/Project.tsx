@@ -222,7 +222,6 @@ export default function Project(props: ProjectProps) {
             <Carousel
               autoPlay={false}
               width="100%"
-              infiniteLoop={true}
               showStatus={false}
               showThumbs={true}
               className="carousel-custom"
@@ -233,7 +232,6 @@ export default function Project(props: ProjectProps) {
             <Carousel
               autoPlay={false}
               width="100%"
-              infiniteLoop={true}
               showStatus={false}
               showThumbs={true}
               className="carousel-custom"
