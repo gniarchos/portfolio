@@ -59,15 +59,15 @@ export default function Navbar() {
         <div className="nav-links">
           <p
             className="link animate__animated animate__fadeInDown animate__delay-1s"
-            onClick={scrollToProjects}
-          >
-            Projects
-          </p>
-          <p
-            className="link animate__animated animate__fadeInDown animate__delay-2s"
             onClick={scrollToSkills}
           >
             Skills
+          </p>
+          <p
+            className="link animate__animated animate__fadeInDown animate__delay-2s"
+            onClick={scrollToProjects}
+          >
+            Projects
           </p>
           <p
             className="link  animate__animated animate__fadeInDown animate__delay-3s"
@@ -89,11 +89,11 @@ export default function Navbar() {
         id="mobile-nav"
         className={showNavbarMenu ? "mobile-nav is-active" : "mobile-nav"}
       >
-        <p className="mobile-link" onClick={scrollToProjects}>
-          Projects
-        </p>
         <p className="mobile-link" onClick={scrollToSkills}>
           Skills
+        </p>
+        <p className="mobile-link" onClick={scrollToProjects}>
+          Projects
         </p>
         <p className="mobile-link" onClick={scrollToContact}>
           Contact
