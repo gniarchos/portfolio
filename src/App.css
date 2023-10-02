@@ -26,10 +26,10 @@ html,
 body {
   background: #232526;
   background-image: linear-gradient(to left, #1f1f1f, #282a2b);
-  background: -webkit-linear-gradient(to left, #1f1f1f, #282a2b);
+  background-image: -webkit-linear-gradient(to left, #1f1f1f, #282a2b);
   background-image: -moz-linear-gradient(to left, #1f1f1f, #282a2b);
-  /* background-attachment: fixed; */
-  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: 0% 1000%;
 
   min-height: 100%;
