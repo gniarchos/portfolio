@@ -77,7 +77,6 @@
   border: 3px solid var(--secondary-orange-color);
   border-radius: 20px;
   color: var(--basic-white);
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
   box-shadow: -3px 3px 0px 0px var(--secondary-orange-color);

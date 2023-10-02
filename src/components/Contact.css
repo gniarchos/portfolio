@@ -14,7 +14,7 @@
 }
 
 .myEmail a {
-  color: #f1f7ee;
+  color: var(--basic-white);
 }
 
 form {
@@ -29,10 +29,9 @@ form input {
   margin-top: 5px;
   height: 40px;
   border-radius: 8px;
-  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   text-align: center;
-  background-color: #ebe9e9;
+  background-color: var(--contact-background);
 }
 
 form label {
@@ -40,28 +39,26 @@ form label {
 }
 
 form textarea {
-  font-family: "Poppins", sans-serif;
   width: 100%;
   resize: none;
   border-radius: 8px;
   margin-bottom: 20px;
   font-size: 1rem;
   text-align: center;
-  background-color: #ebe9e9;
+  background-color: var(--contact-background);
 }
 
 .submit {
   width: 150px;
-  font-family: "Poppins", sans-serif;
-  background: transparent;
+  background: var(--basic-black);
   font-size: 1rem;
   font-weight: 600;
   border-radius: 15px;
   cursor: pointer;
   border: none;
   transition: all 250ms ease-in;
-  border: 2px solid #f1f7ee;
-  color: #f1f7ee;
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
 }
 
 .submit:hover {

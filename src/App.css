@@ -1,11 +1,11 @@
 :root {
   /* GENERAL */
   --primary-black-color: #1f1f1f;
-  /* --primary-faded: rgb(31, 31, 31, 0.7); */
   --blurred-div-background: blur(2px);
   --basic-black: black;
   --basic-white: #f1f7ee;
   --secondary-orange-color: #f3b239;
+  --font: "Poppins", sans-serif;
 
   /* NAVBAR */
   --navbar-background: rgba(56, 55, 55, 0.4);
@@ -13,6 +13,18 @@
 
   /* ABOUT */
   --skills-background: antiquewhite;
+
+  /* CONTACT */
+  --contact-background: #ebe9e9;
+
+  /* FOOTER */
+  --footer-background: rgba(44, 44, 44);
+
+  /* PROJECTS */
+  --projects-background: #2b2b2b;
+  --projects-border-color: rgba(255, 255, 255, 0.11);
+  --projects-github-background: rgb(241, 247, 238, 0.2);
+  --projects-device-selection-active: #444444;
 }
 
 * {
