@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from "react"
+import { useCallback, useState, useEffect } from "react"
 import Particles from "react-tsparticles"
 import type { Container, Engine } from "tsparticles-engine"
 import { loadStarsPreset } from "tsparticles-preset-stars"
@@ -14,15 +14,12 @@ export default function StarsBackground() {
   }, [])
 
   const particlesInit = useCallback(async (engine: Engine) => {
-    // console.log(engine)
     await loadStarsPreset(engine)
   }, [])
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
       setLoaded(true)
-      // console.log(container)
-      // container?.smooth=true
     },
     []
   )

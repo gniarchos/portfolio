@@ -1,6 +1,5 @@
 import { Icon } from "@iconify/react"
 import "./About.css"
-import "aos/dist/aos.css"
 import "animate.css"
 
 export default function About() {

@@ -2,10 +2,7 @@ import { useEffect, useState, useRef } from "react"
 import { Icon } from "@iconify/react"
 import parse from "html-react-parser"
 import { Carousel } from "react-responsive-carousel"
-import "aos/dist/aos.css"
-import AOS from "aos"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-
 import "animate.css"
 import "./Project.css"
 import { useInView } from "react-intersection-observer"
@@ -38,8 +35,7 @@ export default function Project(props: ProjectProps) {
 
   const [handleAnimations, setHandleAnimations] = useState(false)
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
+  const { ref, inView } = useInView({
     threshold: 0,
   })
 
@@ -47,9 +43,6 @@ export default function Project(props: ProjectProps) {
     if (inView) {
       setHandleAnimations(true)
     }
-    //  else {
-    //   setHandleAnimations(false)
-    // }
   }, [inView])
 
   useEffect(() => {
@@ -58,10 +51,6 @@ export default function Project(props: ProjectProps) {
       setHideDeviceButton(true)
     }
   }, [])
-
-  // useEffect(() => {
-  //   setShowMoreInfo(false)
-  // }, [window.innerWidth])
 
   function changeDevices() {
     if (showDevice === "desktop") {

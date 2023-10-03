@@ -12,8 +12,7 @@ type skillsTypesProps = {
 export default function Skills(props: skillsTypesProps) {
   const [handleAnimations, setHandleAnimations] = useState(false)
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
+  const { ref, inView } = useInView({
     threshold: 0,
   })
 
