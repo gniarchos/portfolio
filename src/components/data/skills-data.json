@@ -39,10 +39,11 @@
   { "id": 12, "icon": "file-icons:expo", "name": "Expo", "type": "other" },
 
   { "id": 13, "icon": "uil:linux", "name": "Linux", "type": "other" },
+  { "id": 14, "icon": "ri:windows-fill", "name": "Windows", "type": "other" },
   {
-    "id": 14,
-    "icon": "devicon-plain:photoshop",
-    "name": "Adobe Photoshop",
+    "id": 15,
+    "icon": "akar-icons:vscode-fill",
+    "name": "VSCode",
     "type": "other"
   }
 ]
