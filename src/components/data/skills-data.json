@@ -45,5 +45,11 @@
     "icon": "akar-icons:vscode-fill",
     "name": "VSCode",
     "type": "other"
+  },
+  {
+    "id": 16,
+    "icon": "mdi:design",
+    "name": "UI/UX",
+    "type": "other"
   }
 ]
