@@ -14,7 +14,7 @@ export default function Footer() {
         Source Code
       </a>
 
-      <p>2023 © Giannis Niarchos</p>
+      <p>{new Date().getFullYear()} © Giannis Niarchos</p>
     </footer>
   )
 }
