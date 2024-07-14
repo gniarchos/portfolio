@@ -115,7 +115,7 @@
         "name": "MySQL"
       }
     ],
-    "siteLink": "https://foody-thesis.000webhostapp.com/index.php",
+    "siteLink": null,
     "repoLink": "https://github.com/gniarchos/foody-thesis",
     "desktopImages": [
       "images/foody-thesis_2.png",
