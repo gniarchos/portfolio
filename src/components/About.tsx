@@ -35,7 +35,7 @@ export default function About() {
         </div>
       </div>
       <div className="header-right animate__animated animate__fadeInRight">
-        <p className="header-about-title animate__pulse">Web Developer</p>
+        <p className="header-about-title animate__pulse">Software Engineer</p>
         <div className="header-about-contain">
           <p>
             By breaking into University of West Attica at Informatics and
