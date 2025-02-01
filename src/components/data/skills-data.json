@@ -25,31 +25,40 @@
     "name": "Typescript",
     "type": "front"
   },
-  { "id": 7, "icon": "akar-icons:php-fill", "name": "PHP", "type": "back" },
-  { "id": 8, "icon": "grommet-icons:mysql", "name": "MySQL", "type": "back" },
-  { "id": 9, "icon": "mdi:firebase", "name": "Firebase", "type": "back" },
   {
-    "id": 10,
+    "id": 7,
+    "icon": "simple-icons:elixir",
+    "name": "Elixir Phoenix",
+    "type": "front"
+  },
+  {
+    "id": 8,
+    "icon": "mdi:language-python",
+    "name": "Pyhton",
+    "type": "back"
+  },
+  {
+    "id": 9,
+    "icon": "mdi:language-python",
+    "name": "FastAPI",
+    "type": "back"
+  },
+  { "id": 10, "icon": "akar-icons:php-fill", "name": "PHP", "type": "back" },
+  { "id": 11, "icon": "grommet-icons:mysql", "name": "MySQL", "type": "back" },
+  { "id": 12, "icon": "mdi:firebase", "name": "Firebase", "type": "back" },
+  {
+    "id": 13,
     "icon": "simple-icons:git",
     "name": "Git/GitHub",
     "type": "other"
   },
-  { "id": 11, "icon": "eos-icons:api", "name": "API", "type": "other" },
-
-  { "id": 12, "icon": "file-icons:expo", "name": "Expo", "type": "other" },
-
-  { "id": 13, "icon": "uil:linux", "name": "Linux", "type": "other" },
-  { "id": 14, "icon": "ri:windows-fill", "name": "Windows", "type": "other" },
+  { "id": 14, "icon": "file-icons:expo", "name": "Expo", "type": "other" },
+  { "id": 15, "icon": "uil:linux", "name": "Linux", "type": "other" },
+  { "id": 16, "icon": "ri:windows-fill", "name": "Windows", "type": "other" },
   {
-    "id": 15,
+    "id": 17,
     "icon": "akar-icons:vscode-fill",
     "name": "VSCode",
-    "type": "other"
-  },
-  {
-    "id": 16,
-    "icon": "mdi:design",
-    "name": "UI/UX",
     "type": "other"
   }
 ]
