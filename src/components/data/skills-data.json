@@ -60,5 +60,17 @@
     "icon": "akar-icons:vscode-fill",
     "name": "VSCode",
     "type": "other"
+  },
+  {
+    "id": 18,
+    "icon": "mdi:design",
+    "name": "UI/UX",
+    "type": "other"
+  },
+  {
+    "id": 19,
+    "icon": "ri:supabase-fill",
+    "name": "Supabase",
+    "type": "back"
   }
 ]
