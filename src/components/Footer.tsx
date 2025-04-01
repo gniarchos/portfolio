@@ -4,7 +4,6 @@ import { Icon } from "@iconify/react"
 export default function Footer() {
   return (
     <footer>
-      <p>Made with React and Typescript.</p>
       <a
         href="https://github.com/gniarchos/portfolio"
         target="_blank"
@@ -15,6 +14,8 @@ export default function Footer() {
       </a>
 
       <p>{new Date().getFullYear()} © Giannis Niarchos</p>
+
+      <p>Made and designed by Giannis Niarchos</p>
     </footer>
   )
 }

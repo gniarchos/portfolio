@@ -1,7 +1,7 @@
 footer {
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: var(--footer-background);
@@ -26,4 +26,11 @@ footer p {
   color: var(--basic-white);
   cursor: pointer;
   text-decoration: none;
+}
+
+@media all and (max-width: 780px) {
+  footer {
+    flex-direction: column;
+    gap: 5px;
+  }
 }

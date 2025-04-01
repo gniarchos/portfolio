@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 100px;
   width: 60vw;
@@ -17,11 +17,14 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 8px;
-  font-size: 1.5rem;
+  gap: 6px;
+  font-size: 1.2rem;
   font-weight: 600;
   z-index: 1;
   margin-bottom: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .workedWith-logos {
@@ -42,20 +45,21 @@
 /* MOBILE */
 @media all and (max-width: 499px) {
   .workedWith-logos {
-    font-size: 3.5rem;
-    width: 40px;
-    height: 80px;
+    font-size: 1rem;
+    /* width: 40px; */
+    /* height: 80px; */
   }
 
   .workedWith-wrapper {
-    width: 80vw;
-    flex-direction: column;
-    justify-content: flex-start;
+    width: 90vw;
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
     align-items: flex-start;
   }
 
   .skill-name {
-    margin-bottom: -60px;
+    /* margin-bottom: -60px; */
     text-align: left;
+    font-size: 1rem;
   }
 }
