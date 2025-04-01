@@ -4,14 +4,14 @@ import { Icon } from "@iconify/react"
 export default function Footer() {
   return (
     <footer>
-      <a
+      {/* <a
         href="https://github.com/gniarchos/portfolio"
         target="_blank"
         className="source-code"
       >
         <Icon icon="mdi:github" className="social-icon" width="20" />
         Source Code
-      </a>
+      </a> */}
 
       <p>{new Date().getFullYear()} © Giannis Niarchos</p>
 

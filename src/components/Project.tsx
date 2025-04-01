@@ -67,7 +67,7 @@ export default function Project(props: ProjectProps) {
         style={{ width: "100%", height: "500px" }}
         className="carousel-div-image"
       >
-        <img loading="lazy" src={image} />
+        <img loading="lazy" src={`${process.env.PUBLIC_URL}/${image}`} />
       </div>
     )
   })
@@ -82,7 +82,7 @@ export default function Project(props: ProjectProps) {
         <img
           loading="lazy"
           style={{ width: "100%", height: "100%", objectFit: "contain" }}
-          src={image}
+          src={`${process.env.PUBLIC_URL}/${image}`}
           className="carousel-div-image-mobiles"
         />
       </div>
