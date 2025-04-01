@@ -18,10 +18,11 @@
   padding: 18px;
   padding-top: 0px;
   width: 100%;
+  height: 100%;
   border: 1px solid var(--projects-border-color);
 }
 
-.project-left {
+.project-left-side {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -147,7 +148,7 @@ li {
   backdrop-filter: blur(2px);
 }
 
-.project-right {
+.project-right-side {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -155,6 +156,8 @@ li {
   width: 65%;
   gap: 15px;
   padding-top: 30px;
+  height: calc(100% - 30px);
+  overflow: hidden;
 }
 
 .project-btns-device {
@@ -188,6 +191,13 @@ li {
 .device-selection-btn.mobile {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.device-selection-btn.mobile.only {
+  border-radius: 5px;
+  background-color: var(--basic-white);
+  color: var(--primary-black-color);
+  margin-top: -10px;
 }
 
 .device-selection-btn.fadeButton {
@@ -224,6 +234,8 @@ li {
 
 .carousel-root {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* carousel ---end */
@@ -247,7 +259,7 @@ li {
     flex-direction: column;
   }
 
-  .project-left {
+  .project-left-side {
     width: 100%;
     order: 2;
     margin-top: -40px;
@@ -257,9 +269,10 @@ li {
     margin-bottom: 0px;
   }
 
-  .project-right {
+  .project-right-side {
     order: 1;
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -273,7 +286,7 @@ li {
     width: 100%;
   }
 
-  .project-left {
+  .project-left-side {
     width: 100%;
   }
 
@@ -282,12 +295,15 @@ li {
     margin-top: 0px;
   }
 
-  .project-right {
+  .project-right-side {
     width: 100%;
-    height: auto;
+    height: 260px;
+    margin-bottom: 35px;
   }
 
-  .carousel-root {
-    width: 95vw;
+  .carousel-div-image-mobiles {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: contain !important;
   }
 }

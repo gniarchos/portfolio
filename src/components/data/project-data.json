@@ -1,20 +1,21 @@
 [
   {
     "number": "01",
-    "title": "TVTime - Shows Tracker",
-    "description": "<p>A TV Shows organizer to track and find information about any TV Show.</p> <p>This project utilizes the Firebase Database for login/signup and storing user data. The app fetches all the necessary information from various APIs: <a className='api-links' target='_blank' href='https://developer.themoviedb.org/docs'>TheMovieDB API</a> for TV show details, the <a className='api-links' target='_blank' href='https://rapidapi.com/linaspurinis/api/mdblist/'>MDBList API</a> for TV show ratings, and the <a className='api-links' target='_blank' href='https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability'>Streaming Availability API</a> for TV show streaming availability in the user's country.</p>",
+    "title": "Watchee - TV Shows & Movies Tracker",
+    "description": "<p>A TV Shows and Movies organizer to track and find information about any TV Show and Movie.</p> <p>This project utilizes the Supabase Database for login/signup and storing user data. The app fetches all the necessary information from various APIs: <a className='api-links' target='_blank' href='https://developer.themoviedb.org/docs'>TheMovieDB API</a> for TV Shows and Movies details and the <a className='api-links' target='_blank' href='https://rapidapi.com/linaspurinis/api/mdblist/'>MDBList API</a> for TV Show and Movies ratings.</p>",
     "moreInfoTitle": "Features",
     "moreInfo": [
-      "Add shows to your Watchlist",
-      "Mark episodes as watched or un-watched",
+      "Add shows and movies to your Watchlist",
+      "Mark episodes and movies as watched or un-watched",
       "Mark entire seasons as watched",
       "Cast and crew information",
-      "Details about seasons and shows",
-      "Trending and popular shows",
-      "History of watched episodes",
-      "Search for any TV show and apply filters",
-      "User statistics for total TV watch time and episode count",
-      "Streaming availability in the user's country"
+      "Details about seasons, shows and movies",
+      "Trending and popular shows and movies",
+      "History of watched episodes and movies",
+      "Search for any show or movie",
+      "User statistics for total TV watch time, episode count and favorite genres",
+      "PWA (standalone app) compatibility",
+      "iOS app support"
     ],
     "additionalTitle": null,
     "additionalInfo": null,
@@ -37,37 +38,50 @@
         "name": "React"
       },
       {
-        "icon": "vscode-icons:file-type-firebase",
-        "name": "Firebase"
+        "icon": "devicon:supabase",
+        "name": "Supabase"
       },
       {
-        "icon": "eos-icons:api",
-        "name": "API"
+        "icon": "devicon:python",
+        "name": "Python"
+      },
+      {
+        "icon": "devicon:fastapi",
+        "name": "FastAPI"
       },
       {
         "icon": "simple-icons:pwa",
         "name": "PWA - Standalone App"
+      },
+      {
+        "icon": "simple-icons:ios",
+        "name": "iOS"
       }
     ],
-    "siteLink": "https://tvtime-app-tracker.web.app/",
-    "repoLink": "https://github.com/gniarchos/TVTime-ShowsTracker",
+    "siteLink": "https://watchee.vercel.app/",
+    "repoLink": "https://github.com/gniarchos/Watchee-Shows-Movies-Tracker",
     "desktopImages": [
-      "images/tv-time_1.png",
-      "images/tv-time_2.png",
-      "images/tv-time_3a.png",
-      "images/tv-time_3b.png",
-      "images/tv-time_4.png",
-      "images/tv-time_5.png",
-      "images/tv-time_6.png"
+      "images/watchee_1.png",
+      "images/watchee_2.png",
+      "images/watchee_3.png",
+      "images/watchee_4.png",
+      "images/watchee_5.png",
+      "images/watchee_6.png",
+      "images/watchee_7.png",
+      "images/watchee_8.png",
+      "images/watchee_10.png",
+      "images/watchee_11.png"
     ],
     "mobileImages": [
-      "images/tv-time_1_mobile.png",
-      "images/tv-time_2_mobile.png",
-      "images/tv-time_3a_mobile.png",
-      "images/tv-time_3b_mobile.png",
-      "images/tv-time_4_mobile.png",
-      "images/tv-time_5_mobile.png",
-      "images/tv-time_6_mobile.png"
+      "images/watchee_1_mobile.png",
+      "images/watchee_2_mobile.png",
+      "images/watchee_3_mobile.png",
+      "images/watchee_4_mobile.png",
+      "images/watchee_5_mobile.png",
+      "images/watchee_6_mobile.png",
+      "images/watchee_7_mobile.png",
+      "images/watchee_8_mobile.png",
+      "images/watchee_9_mobile.png"
     ]
   },
   {
@@ -345,7 +359,6 @@
     "repoLink": "https://github.com/gniarchos/weather_app",
     "desktopImages": null,
     "mobileImages": [
-      "images/weather-app_1.png",
       "images/weather-app_2.png",
       "images/weather-app_3.png",
       "images/weather-app_4.png",

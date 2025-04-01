@@ -62,7 +62,11 @@ export default function Project(props: ProjectProps) {
 
   const projectImagesDesktop = props?.desktopImages.map((image) => {
     return (
-      <div key={image} className="carousel-div-image">
+      <div
+        key={image}
+        style={{ width: "100%", height: "500px" }}
+        className="carousel-div-image"
+      >
         <img loading="lazy" src={image} />
       </div>
     )
@@ -70,8 +74,17 @@ export default function Project(props: ProjectProps) {
 
   const projectImagesMobile = props.mobileImages.map((image) => {
     return (
-      <div key={image} className="carousel-div-image">
-        <img loading="lazy" src={image} />
+      <div
+        key={image}
+        style={{ width: "100%", height: "510px", objectFit: "contain" }}
+        className="carousel-div-image"
+      >
+        <img
+          loading="lazy"
+          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          src={image}
+          className="carousel-div-image-mobiles"
+        />
       </div>
     )
   })
@@ -108,7 +121,7 @@ export default function Project(props: ProjectProps) {
       }
     >
       <div ref={ref} className="project-container">
-        <div className="project-left">
+        <div className="project-left-side">
           <div ref={divToMeasureDesc}>
             <h1 className="project-name">
               <span>{props.number}</span>
@@ -145,7 +158,7 @@ export default function Project(props: ProjectProps) {
             ref={divToMeasureAdditional}
             className="projects-additionalInfo-wrapper"
           >
-            <p className="project-period">{props.date}</p>
+            {/* <p className="project-period">{props.date}</p> */}
             <div className="using-imgs">
               {props.techUsed.map((tech) => {
                 return (
@@ -177,7 +190,7 @@ export default function Project(props: ProjectProps) {
           </div>
         </div>
 
-        <div className="project-right">
+        <div className="project-right-side">
           <div
             className={
               !hideDeviceButton
@@ -207,13 +220,29 @@ export default function Project(props: ProjectProps) {
             </button>
           </div>
 
+          {hideDeviceButton && (
+            <div className="project-btns-device">
+              <button
+                className={
+                  showDevice === "mobile"
+                    ? "device-selection-btn mobile only"
+                    : ""
+                }
+                // onClick={changeDevices}
+              >
+                Mobile
+              </button>
+            </div>
+          )}
+
           {showDevice === "desktop" ? (
             <Carousel
               autoPlay={false}
               width="100%"
               showStatus={false}
-              showThumbs={true}
+              showThumbs={false}
               className="carousel-custom"
+              infiniteLoop={true}
             >
               {projectImagesDesktop}
             </Carousel>
@@ -222,8 +251,9 @@ export default function Project(props: ProjectProps) {
               autoPlay={false}
               width="100%"
               showStatus={false}
-              showThumbs={true}
+              showThumbs={false}
               className="carousel-custom"
+              infiniteLoop={true}
             >
               {projectImagesMobile}
             </Carousel>
